@@ -51,6 +51,7 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 3️⃣ **ESP32 Web Server Features**
    - The ESP32 **hosts a Wi-Fi network** (`http://192.168.4.1`).
    - Users can **monitor access logs** (see who unlocked the door).
+   - bright☀️/dark🌙 background mode is allowed to choose.
    - A **toggle switch button** allows manual lock/unlock control.
    - **Auto-timer lock** re-locks the door after a set time.
 
@@ -73,5 +74,16 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
   - ❌ **LCD** displays `"Wrong Access"`.
   - ❌ **Buzzer beeps twice** as a warning.
   - ❌ **No failed attempt logging in the system** (only the web server updates).
+ 
+6️⃣ **Auto-Lock Timer Feature**
+- After the door is unlocked, a **10-second countdown** begins.
+- A **timer display appears on the web server**, showing:
+  - **Starts at `00:10`** → **Counts down every second** → **Reaches `00:00`**.
+  - Reminds the user to close the door before it auto-locks.
+- When the **countdown reaches `00:00`**:
+  - ✅ **Servo motor locks the door automatically**.
+  - ✅ **Web interface updates** to `"The door is locked (by auto-lock)"`.
+  - ✅ **LCD displays** `"The door is locked (by auto-lock)"`.
+
 
 
