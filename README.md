@@ -7,7 +7,7 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 - 📸 [Full Python Face Recognition Code](Full_Python_Face_Recognition_Code.md)
 
 ### 🛠️ System Components
-- ✏️ [ESP32 Overview](ESP32 Overview.md)
+- ✏️ [ESP32 Overview](ESP32 Overview.md).
 - 🔄 [Servo Motor Control](docs/Servo_Motor.md)
 - 🔢 [Keypad Authentication](docs/Keypad.md)
 - 📡 [RFID System](docs/RFID.md)
