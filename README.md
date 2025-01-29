@@ -4,5 +4,8 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 ---
 ## 🖼️ Project Overview
 
+### Breadboard Setup
+![Breadboard Setup](https://raw.githubusercontent.com/YourUsername/ESP32-smart-door-system/main/YOUR_IMAGE_NAME_HERE)
+
 ### Full Desk Setup
-![Full Desk Setup](PASTE-YOUR-IMAGE-LINK-HERE)
+![Full Desk Setup](https://raw.githubusercontent.com/YourUsername/ESP32-smart-door-system/main/YOUR_IMAGE_NAME_HERE)
