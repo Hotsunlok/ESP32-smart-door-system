@@ -23,3 +23,55 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 | **Buzzer** | Beeps for alerts | ![Buzzer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/68672755558138dd45b397e85a5573a357a4886c/IMG_8230.jpg) |
 | **Servo Motor** | Controls door lock | ![Servo](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e0d2e725ebff193361b7f4becfa9c9968e0833a8/B7D6B00C-865B-4646-9274-3ECE02B5C609.jpg) |
 
+---
+## 🏠 How It Works
+
+1️⃣ **User Unlocks the Door Using One of These Methods:**
+   - **RFID card** (Scans an NFC card to unlock)
+   - **Fingerprint sensor** (Authenticates and unlocks)
+   - **Keypad password** (Enters the correct password)
+   - **Web interface button** (Toggles lock/unlock)
+   - **Face ID detection** (PC recognizes the face and sends unlock signal)
+
+2️⃣ **ESP32 Processes the Unlock Request**
+- The ESP32 **receives the signal** from the selected unlock method.
+- **If authentication is correct:**
+  - ✅ **Servo motor** rotates to unlock the door.
+  - ✅ **LCD** displays `"The door is unlocked (by [method])"` (e.g., keypad, RFID).
+  - ✅ **Buzzer** beeps **once** as confirmation.
+  - ✅ **Web Server** updates with `"The door is unlocked (by [method])"`.
+
+- **If authentication fails:**
+  - ❌ **Servo motor** stays in its position (no movement).
+  - ❌ **LCD** displays `"Wrong Access"`.
+  - ❌ **Buzzer** beeps **twice** as a warning.
+  - ❌ **Web Server** updates with `"Wrong Access (by [method])"`.
+
+
+3️⃣ **ESP32 Web Server Features**
+   - The ESP32 **hosts a Wi-Fi network** (`http://192.168.4.1`).
+   - Users can **monitor access logs** (see who unlocked the door).
+   - A **toggle switch button** allows manual lock/unlock control.
+   - **Auto-timer lock** re-locks the door after a set time.
+
+4️⃣ **Face ID Integration with Python & OpenCV**
+   - A **PC with a USB camera** runs **Python + OpenCV Face Recognition**.
+   - If the **detected face matches**, the PC **sends a wireless signal (via HTTP/WebSocket)** to ESP32.
+   - The ESP32 **receives the Face ID signal** and **unlocks the door** (same as other methods).
+   - If Face ID **fails**, it logs the failed attempt.
+
+5️⃣ **Real-Time System Updates**
+- Any unlocking event **updates the web interface in real-time**.
+  
+- **If authentication is correct:**
+  - ✅ **Web interface updates** to `"The door is unlocked (by [method])"`.
+  - ✅ **LCD** displays `"The door is unlocked (by [method])"` (e.g., `"by keypad"`, `"by RFID"`).
+  - ✅ **System auto-locks** after a set time if no further actions occur.
+
+- **If authentication fails:**
+  - ❌ **Web interface updates** to `"Wrong Access (by [method])"`.
+  - ❌ **LCD** displays `"Wrong Access"`.
+  - ❌ **Buzzer beeps twice** as a warning.
+  - ❌ **No failed attempt logging in the system** (only the web server updates).
+
+
