@@ -1,5 +1,17 @@
 # 🚪 ESP32 Smart Door System
 This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV), and multiple unlocking methods: RFID, fingerprint, keypad, and a web interface.
+## 📂 Project Documentation
+### 🔥 Full Source Code
+- [🚀 Full Arduino Code (ESP32)](Full_Arduino_Code.md)
+- [📸 Full Python Face Recognition Code](Full_Python_Face_Recognition_Code.md)
+
+### 🛠️ System Components
+- [🔧 ESP32 Overview](docs/ESP32.md)
+- [🔄 Servo Motor Control](docs/Servo_Motor.md)
+- [🔢 Keypad Authentication](docs/Keypad.md)
+- [📡 RFID System](docs/RFID.md)
+- [🖥️ LCD Display](docs/LCD.md)
+- [🌐 Web Server](docs/Web_Server.md)
 
 ---
 ## 🖼️ Project Overview
