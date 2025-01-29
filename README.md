@@ -20,6 +20,6 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 | **Fingerprint Sensor R307** | Unlocks with a fingerprint | ![Fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/421966717244247ce77089965ba3aca17e2ff172/IMG_8226.jpg) |
 | **Keypad** | Allows password entry | ![Keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/4478092b2e4120dc1fb2c60b1cf059ac32181918/IMG_8211.jpg) |
 | **LCD 1602 I2C** | Shows messages | ![LCD](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/ad300b9bc206309a1d03f3c098b7372628aceaa9/IMG_8222.jpg) |
-| **Buzzer** | Beeps for alerts | ![Buzzer](https://your-image-link-here) |
+| **Buzzer** | Beeps for alerts | ![Buzzer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/68672755558138dd45b397e85a5573a357a4886c/IMG_8230.jpg) |
 | **Servo Motor** | Controls door lock | ![Servo](https://your-image-link-here) |
 
