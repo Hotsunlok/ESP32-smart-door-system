@@ -56,7 +56,6 @@ It includes:
 ### 🔊 Buzzer
 | Buzzer Pin | ESP32 Pin |
 |------------|----------|
-| VCC        | 5V       |
 | GND        | GND      |
 | Signal     | GPIO 23  |
 
@@ -65,7 +64,7 @@ It includes:
 |----------------|----------|
 | TX            | GPIO 16 (RX2) |
 | RX            | GPIO 17 (TX2) |
-| VCC           | 3.3V     |
+| VCC           | 5V     |
 | GND           | GND      |
 
 ---
