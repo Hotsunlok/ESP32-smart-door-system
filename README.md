@@ -1,17 +1,32 @@
 # 🚪 ESP32 Smart Door System
 This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV), and multiple unlocking methods: RFID, fingerprint, keypad, and a web interface.
 ## 📂 Project Documentation
+
 ### 🔥 Full Source Code
-- [🚀 Full Arduino Code (ESP32)](Full_Arduino_Code.md)
-- [📸 Full Python Face Recognition Code](Full_Python_Face_Recognition_Code.md)
+- 🚀 [Full Arduino Code (ESP32)](Full_Arduino_Code.md)
+- 📸 [Full Python Face Recognition Code](Full_Python_Face_Recognition_Code.md)
 
 ### 🛠️ System Components
-- [🔧 ESP32 Overview](docs/ESP32.md)
-- [🔄 Servo Motor Control](docs/Servo_Motor.md)
-- [🔢 Keypad Authentication](docs/Keypad.md)
-- [📡 RFID System](docs/RFID.md)
-- [🖥️ LCD Display](docs/LCD.md)
-- [🌐 Web Server](docs/Web_Server.md)
+- ✏️ [ESP32 Overview](docs/ESP32.md)
+- 🔄 [Servo Motor Control](docs/Servo_Motor.md)
+- 🔢 [Keypad Authentication](docs/Keypad.md)
+- 📡 [RFID System](docs/RFID.md)
+- 🖥️ [LCD Display](docs/LCD.md)
+- 🌐 [Web Server](docs/Web_Server.md)
+
+### 📌 Pin Connections & Hardware
+- 🛠️ [ESP32 Pin Mappings](ESP32_Pin_Mappings.md)  
+  *(Includes all wiring tables for LCD, keypad, RFID, buzzer, servo, and fingerprint sensor.)*
+
+
+### 📸 Python Face Recognition
+- 🤖 [Face Recognition System](docs/Face_Recognition.md)  
+  *(Explains how the PC uses OpenCV to detect faces and send unlock signals to ESP32.)*
+
+### 🔌 PCB Design (KiCad)
+- 🛠️ [KiCad PCB Schematic & Layout](docs/PCB_Design.md)  
+  *(Final PCB circuit layout for ESP32-based smart door lock system.)*
+
 
 ---
 ## 🖼️ Project Overview
