@@ -1,3 +1,20 @@
+# 🚀 Full Arduino Code (ESP32)
+
+This is the **complete Arduino C code** for the ESP32-based smart door system.  
+It integrates multiple authentication methods, including:  
+✅ **RFID** for card-based unlocking.  
+✅ **Fingerprint sensor** for biometric authentication.  
+✅ **Keypad** for password entry.  
+✅ **LCD display** for system feedback.  
+✅ **Buzzer** for audio alerts.  
+✅ **Servo motor** for door control.  
+✅ **Web server** to monitor and control the lock remotely.  
+
+---
+
+## 📜 Source Code
+
+```cpp
 #define SS_PIN 4
 #define RST_PIN 34
 #define BUZZER_PIN 23
