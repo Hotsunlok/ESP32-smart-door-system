@@ -8,13 +8,13 @@ It includes:
 ---
 
 ## 📸 Full Circuit Diagram (Breadboard Simulation)
-![Breadboard Circuit](https://your-image-link-here)
+![Breadboard Circuit](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5980bb01afa6fdc7061bd8b202ed9d2c758aaa80/Final%20Project%20-2%20(2).jpg)
 
 ---
 
 ## 📌 ESP32 Pin Mapping Tables
 
-### 🔄 Servo Motor
+### 🔄 Servo Motor SG90
 | Servo Pin | ESP32 Pin |
 |-----------|----------|
 | VCC       | 5V       |
@@ -44,13 +44,14 @@ It includes:
 ### 📡 RFID/NFC Module (RC522)
 | RC522 Pin | ESP32 Pin |
 |-----------|----------|
-| SDA       | GPIO 5   |
-| SCK       | GPIO 18  |
-| MOSI      | GPIO 23  |
-| MISO      | GPIO 19  |
+| SDA       | GPIO 4   |
+| SCK       | GPIO 15 (in series with 10K pull-up resistors) |
+| MOSI      | GPIO 2  (in series with 10K pull-downn resistors)|
+| MISO      | GPIO 35  |
 | IRQ       | N/A (PLEASE DO NOT CONNECT)     |
+| 3.3V      | 3.3V      |
 | GND       | GND      |
-| RST       | GPIO 4   |
+| RST       | GPIO 34   |
 
 ### 🔊 Buzzer
 | Buzzer Pin | ESP32 Pin |
@@ -62,8 +63,8 @@ It includes:
 ### 🛡️ Fingerprint Sensor
 | Fingerprint Pin | ESP32 Pin |
 |----------------|----------|
-| TX            | GPIO 16  |
-| RX            | GPIO 17  |
+| TX            | GPIO 16 (RX2) |
+| RX            | GPIO 17 (TX2) |
 | VCC           | 3.3V     |
 | GND           | GND      |
 
