@@ -35,7 +35,7 @@ After ESP32 **creates the Wi-Fi network**, users can connect by selecting **ESP3
 ---
 
 ### 📸 **Example Screenshot from iPad Wi-Fi Settings:**
-![iPad Wi-Fi Screenshot](YOUR_IMAGE_LINK_HERE)
+![iPad Wi-Fi Screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/fc73af3fad89f7f9fe778beef999e5649898aa7c/%E5%9C%96%E7%89%871.png)
 
 ✅ **Wi-Fi Name:** `ESP32_AP`  
 🔑 **Password:** `12345678`  
