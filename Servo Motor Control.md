@@ -63,7 +63,7 @@ servo.write(110); // Move servo to lock position
 ```
 
 📌 **Visual Representation:**
-![Lock Flow](docs/servo_lock.png)
+![Lock Flow](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a70bdcffb018e069f23006e149ab38e9e3320131/servomotor_lock.jpg)
 
 ---
 
