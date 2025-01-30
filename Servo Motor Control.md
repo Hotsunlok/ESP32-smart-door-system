@@ -51,7 +51,7 @@ servo.write(50); // Move servo to unlock position
 ```
 
 📌 **Visual Representation:**
-![Unlock Flow](docs/servo_unlock.png)
+![Unlock Flow](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/fc451fee8161c6a70298a61cfaf564ad6ce5002c/servomotorunlock.jpg)
 
 ---
 
