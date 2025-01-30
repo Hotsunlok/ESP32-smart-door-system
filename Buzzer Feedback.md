@@ -47,5 +47,42 @@ void controlDoor(bool lock, String method) {
     digitalWrite(BUZZER_PIN, LOW);   // Turn buzzer OFF
 }
 ```
+🖼 **Technical Representation:** 
+![Buzzer Technical Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6f1cfeabb119c8fc78823351eb587660b3ef315f/buzzertechnical.jpg)
+
 ---
-![Buzzer Technical Flowchart](docs/images/buzzer_technical_flowchart.png)
+## 🔊 Buzzer Response - Wrong Authentication (2 Beeps)
+
+### ❌ **Simple Explanation**
+When the user **enters the wrong password** (via **Keypad**), the **buzzer will beep twice** to indicate **failed authentication**.
+
+📌 **How It Works:**  
+- The ESP32 detects an **incorrect authentication attempt**.  
+- If invalid, the **buzzer beeps twice**, each lasting **200 milliseconds**, with a **200ms pause between beeps**.  
+- This provides an **audio alert** that access was **denied**.
+
+🖼 **Visual Representation:**  
+![Buzzer Wrong Authentication](docs/images/buzzer_wrong_simple.png)
+
+---
+
+### 🛠 **Technical Explanation**
+When the user **fails authentication**, ESP32 calls the function:
+
+```cpp
+showError("keypad");   // Example: Wrong keypad password
+```
+Inside `showError()`, the buzzer is triggered as follows:
+```cpp
+void showError(String method) {
+    // Beep twice
+    for (int i = 0; i < 2; i++) {
+        digitalWrite(BUZZER_PIN, HIGH);  // Turn buzzer ON
+        delay(200);                      // Keep it ON for 200ms
+        digitalWrite(BUZZER_PIN, LOW);   // Turn buzzer OFF
+        delay(200);                      // Pause for 200ms before second beep
+    }
+}
+```
+🖼 **Technical Representation:** 
+![Buzzer Technical Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6f1cfeabb119c8fc78823351eb587660b3ef315f/buzzertechnical.jpg)
