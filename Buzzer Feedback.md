@@ -86,3 +86,45 @@ void showError(String method) {
 ```
 🖼 **Technical Representation:** 
 ![Buzzer Technical Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/82af26a70bb708ca3b9d985a18644fa2ebd1b901/smartdoorsystempics.jpg)
+## ⏳ Buzzer Response - Auto-Lock Timer (1 Beep)
+
+### 🔄 **Simple Explanation**
+When the **auto-lock timer** reaches **10 seconds**, the **door automatically locks**, and the **buzzer beeps once** to notify the user.
+
+📌 **How It Works:**  
+- After the user **unlocks** the door, a **10-second countdown** starts.  
+- Once **10 seconds** have passed, the **ESP32 automatically locks** the door.  
+- The **buzzer beeps once** to confirm the **auto-lock action**.
+
+
+
+---
+
+### 🛠 **Technical Explanation**
+When **auto-lock is triggered**, ESP32 calls:
+
+```cpp
+controlDoor(true, "auto-lock");   // Example: Auto-lock triggered
+```
+Inside `controlDoor()`, the buzzer is triggered as follows:
+```cpp
+void controlDoor(bool lock, String method) {
+    if (lock) {
+        // Auto-lock case
+        digitalWrite(BUZZER_PIN, HIGH);  // Turn buzzer ON
+        delay(300);                      // Keep it ON for 300ms
+        digitalWrite(BUZZER_PIN, LOW);   // Turn buzzer OFF
+    }
+}
+```
+In order to trigger the `controlDoor(true, "auto-lock");`, it needs to fulfill the following code condition 
+```cpp
+// Auto-lock countdown
+if (timerActive) {
+    unsigned long currentTime = millis();
+    if (currentTime - unlockTime >= countdownDuration) {
+        doorLocked = true;
+        controlDoor(doorLocked, "auto-lock");  // Trigger auto-lock & buzzer
+    }
+}
+```
