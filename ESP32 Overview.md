@@ -1,7 +1,7 @@
 # ✏️ ESP32 Overview
 
 ## 📸 Component Image
-![ESP32-WROOM-32](https://your-esp32-image-link-here)
+![ESP32-WROOM-32](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0cfe98380a1be4ccb8e51283876fd8ed71c71059/612qHR9BZgL._AC_SY450_.jpg)
 
 ### **Microcontroller Model:**  
 ESP-WROOM-32 Chip CP2102  
