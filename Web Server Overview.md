@@ -41,7 +41,21 @@ WebSocket is a protocol that establishes a **continuous**, **bi-directional** co
 📌 **Web Server Setup & Real-Time Toggle Switch Tutorial:**  
 [ESP32 Web Server & Toggle Switch Guide](https://randomnerdtutorials.com/esp32-esp8266-web-server-physical-button/)
 
-### ✅ **Next Steps**
-- Explain **UI features** (toggle switch, themes, access logs).  
-- Show WebSocket **implementation in ESP32 code**.  
+---
+Below is a **screenshot of the web server interface**, showing the complete layout of the Smart Door System website.
+
+🖼 **Web Server Screenshot:**  
+![Web Server Screenshot](your-screenshot-link-here)
+
+---
+
+## 🎨 **Toggle Switch: Light/Dark Mode**
+
+The web server allows users to **toggle between Bright and Dark Mode** for the background color.
+
+| **Toggle Switch State** | **Website Background Color** |
+|------------------------|---------------------------|
+| 🌞 **Bright Mode (OFF)** | ![Light Mode Preview](your-light-mode-image-link-here) |
+| 🌙 **Dark Mode (ON)** | ![Dark Mode Preview](your-dark-mode-image-link-here) |
+
 
