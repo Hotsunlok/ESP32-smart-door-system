@@ -45,7 +45,7 @@ WebSocket is a protocol that establishes a **continuous**, **bi-directional** co
 Below is a **screenshot of the web server interface**, showing the complete layout of the Smart Door System website.
 
 🖼 **Web Server Screenshot:**  
-![Web Server Screenshot](your-screenshot-link-here)
+![Web Server Screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/dde994014058fbe2cb3d35e2f19313285ace89e0/IMG_2781.PNG)
 
 ---
 
