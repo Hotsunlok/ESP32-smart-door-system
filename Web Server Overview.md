@@ -55,7 +55,7 @@ The web server allows users to **toggle between Bright and Dark Mode** for the b
 
 | **Toggle Switch State** | **Website Background Color** |
 |------------------------|---------------------------|
-| 🌞 **Bright Mode (OFF)** | ![Light Mode Preview](your-light-mode-image-link-here) |
-| 🌙 **Dark Mode (ON)** | ![Dark Mode Preview](your-dark-mode-image-link-here) |
+| 🌞 Bright Mode  | ![Light Mode Preview](your-light-mode-image-link-here) |
+| 🌙 Dark Mode  | ![Dark Mode Preview](your-dark-mode-image-link-here) |
 
 
