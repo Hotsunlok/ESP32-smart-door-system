@@ -36,7 +36,7 @@ This system consists of two main sections:
   *(Controls locking and unlocking the door.)*  
 - 🖥️ [LCD Display](docs/LCD.md)  
   *(Shows status updates like "Door Unlocked" or "Wrong Access.")*  
-- 🔊 [Buzzer Feedback](docs/Buzzer.md)  
+- - 🔊 [Buzzer Feedback](Buzzer%20Feedback.md)  
   *(Beeps once for success, twice for failure.)*
 - 🌐 [Web Server Response & Real-Time Updates](docs/Web_Server_Response.md)  
   *(Shows access logs, auto-lock countdown, and real-time state updates.)*  
