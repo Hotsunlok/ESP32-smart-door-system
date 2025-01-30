@@ -32,7 +32,7 @@ This system consists of two main sections:
 ---
 
 ### **📢 Output Components** (Responses)
-- 🔄 [Servo Motor Control](docs/Servo_Motor.md)  
+- 🔄 [Servo Motor Control](Servo%20Motor%20Control.md)  
   *(Controls locking and unlocking the door.)*  
 - 🖥️ [LCD Display](docs/LCD.md)  
   *(Shows status updates like "Door Unlocked" or "Wrong Access.")*  
