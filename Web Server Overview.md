@@ -34,9 +34,12 @@ WebSocket is a protocol that establishes a **continuous**, **bi-directional** co
 ## 🖼 **WebSocket Concept Illustration**  
 *(Upload your WebSocket concept image here)*  
 
-![WebSocket Diagram](docs/images/websocket_diagram.png)
+![WebSocket Diagram](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5098cd4271fb7b87008d8ab8eeb74e560be74fe2/%E5%9C%96%E7%89%872.jpg)
 
 ---
+## 🔗 **Web Server Installation & Real-Time Update Reference**  
+📌 **Web Server Setup & Real-Time Toggle Switch Tutorial:**  
+[ESP32 Web Server & Toggle Switch Guide](https://randomnerdtutorials.com/esp32-esp8266-web-server-physical-button/)
 
 ### ✅ **Next Steps**
 - Explain **UI features** (toggle switch, themes, access logs).  
