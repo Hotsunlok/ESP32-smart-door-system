@@ -85,4 +85,4 @@ void showError(String method) {
 }
 ```
 🖼 **Technical Representation:** 
-![Buzzer Technical Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6f1cfeabb119c8fc78823351eb587660b3ef315f/buzzertechnical.jpg)
+![Buzzer Technical Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/82af26a70bb708ca3b9d985a18644fa2ebd1b901/smartdoorsystempics.jpg)
