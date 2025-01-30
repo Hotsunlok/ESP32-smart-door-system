@@ -56,6 +56,6 @@ The web server allows users to **toggle between Bright and Dark Mode** for the b
 | **Toggle Switch State** | **Website Background Color** |
 |------------------------|---------------------------|
 | 🌞 Bright Mode  | ![Light Mode Preview](your-light-mode-image-link-here) |
-| 🌙 Dark Mode  | ![Dark Mode Preview](your-dark-mode-image-link-here) |
+| 🌙 Dark Mode  | ![Dark Mode Preview](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/634c33304805957b2c7cbcf3c1b20e0222ee1fb8/IMG_2805%20(1).PNG) |
 
 
