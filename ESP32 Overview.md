@@ -53,6 +53,24 @@ Want to learn how to set up a **web server on ESP32**? Check out this tutorial:
 
 ---
 
+
+
+# 🌐 ESP32 and Web Server Integration
+
+ESP32 hosts a real-time **web server** where users can:
+
+- 📜 **Monitor** logs of access events.
+- 🔓 **Manually lock/unlock** the door.
+- ⏳ **View auto-lock countdown timer.**
+
+---
+
+## 📌 Web Server Setup
+```cpp
+server.on("/", HTTP_GET, handleRoot);
+ws.onEvent(onWebSocketEvent);
+```
+---
 # 🔷 ESP32’s Role in the Smart Door System
 
 ESP32 processes **all authentication methods** and sends commands to **output components**:
@@ -75,19 +93,3 @@ Whenever a user **successfully authenticates**, ESP32 calls this function (FOR E
 controlDoor(doorLocked, "fingerprint");
 ```
 ---
-
-# 🌐 ESP32 and Web Server Integration
-
-ESP32 hosts a real-time **web server** where users can:
-
-- 📜 **Monitor** logs of access events.
-- 🔓 **Manually lock/unlock** the door.
-- ⏳ **View auto-lock countdown timer.**
-
----
-
-## 📌 Web Server Setup
-```cpp
-server.on("/", HTTP_GET, handleRoot);
-ws.onEvent(onWebSocketEvent);
-
