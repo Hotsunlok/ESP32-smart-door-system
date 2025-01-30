@@ -34,7 +34,7 @@ The **SG90 servo motor** operates at **two critical angles** to control the **do
 | **Angle (Degrees)** | **Action** | **Illustration** |
 |-------------------|-------------|------------------|
 | 🔒 **110°**      | **Locks** the door (pushes the steel rod into the sliding bolt lock). | ![Lock Image](lock_image.png) |
-| 🔓 **50°**       | **Unlocks** the door (pulls the steel rod out of the sliding bolt lock). | ![Unlock Image](unlock_image.png) |
+| 🔓 **50°**       | **Unlocks** the door (pulls the steel rod out of the sliding bolt lock). | ![Unlock Image](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/44a2e72f55b34a9cd8817ceafbf4adc12930e55f/IMG_8311.jpg) |
 
 
 👉 The ESP32 sends a signal to **rotate the servo** between these two positions when a valid unlock method is used.
