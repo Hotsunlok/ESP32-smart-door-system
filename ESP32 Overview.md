@@ -42,6 +42,15 @@ After ESP32 **creates the Wi-Fi network**, users can connect by selecting **ESP3
 
 Once connected, open a web browser and go to **[http://192.168.4.1](http://192.168.4.1)** to access the web server.
 
+⚠️ **Note:** `192.168.4.1` is the default **ESP32 AP mode IP address**, but it **may be different** depending on your configuration.
+
+---
+
+## 🔗 Setting Up a Web Server on ESP32
+Want to learn how to set up a **web server on ESP32**? Check out this tutorial:  
+📖 [ESP32 Web Server Tutorial](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
+
+
 ---
 
 # 🔷 ESP32’s Role in the Smart Door System
