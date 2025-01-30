@@ -5,23 +5,49 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 ### 🔥 Full Source Code
 - 🚀 [Full Arduino Code (ESP32)](Full_Arduino_Code.md)
 - 📸 [Full Python Face Recognition Code](Full_Python_Face_Recognition_Code.md)
+---
+### ✏️ ESP32 Overview
+- ✏️ [ESP32 Overview](ESP32%20Overview.md)
+---
+## 🌍 **Web Server Feature Overview**
+*(Explains WebSocket, UI features, background themes, logs, and toggle controls.)*  
+- 🌍 [Web Server Overview](docs/Web_Server.md)  
+---
+### 🛠️ System Components  
+This system consists of two main sections:  
 
-### 🛠️ System Components
-- ✏️ [ESP32 Overview](ESP32%20Overview.md).
-- 🔄 [Servo Motor Control](docs/Servo_Motor.md)
-- 🔢 [Keypad Authentication](docs/Keypad.md)
-- 📡 [RFID System](docs/RFID.md)
-- 🖥️ [LCD Display](docs/LCD.md)
-- 🌐 [Web Server](docs/Web_Server.md)
+1️⃣ **🔑 Authentication Methods** (User inputs to unlock the door)  
+2️⃣ **📢 Output Components** (ESP32 responses after authentication)  
+
+---
+
+### **🔑 Authentication Methods** (Inputs)
+- 🔢 [Keypad Authentication](docs/Keypad.md)  
+- 📡 [RFID System](docs/RFID.md)  
+- 🏷️ [Fingerprint Sensor](docs/Fingerprint.md)  
+- 🎛️ [Web Server Toggle Button (Manual)](docs/Web_Toggle.md)    
+- 🤖 [Face Recognition System](docs/Face_Recognition.md)  
+  *(PC uses connected camera with Python OpenCV to detect faces and send unlock signals to ESP32.)*  
+
+---
+
+### **📢 Output Components** (Responses)
+- 🔄 [Servo Motor Control](docs/Servo_Motor.md)  
+  *(Controls locking and unlocking the door.)*  
+- 🖥️ [LCD Display](docs/LCD.md)  
+  *(Shows status updates like "Door Unlocked" or "Wrong Access.")*  
+- 🔊 [Buzzer Feedback](docs/Buzzer.md)  
+  *(Beeps once for success, twice for failure.)*
+- 🌐 [Web Server Response & Real-Time Updates](docs/Web_Server_Response.md)  
+  *(Shows access logs, auto-lock countdown, and real-time state updates.)*  
+
+
+---
 
 ### 📌 Pin Connections & Hardware
 - 🛠️ [ESP32 Pin Mappings](ESP32_Pin_Mappings.md)  
   *(Includes all wiring tables for LCD, keypad, RFID, buzzer, servo, and fingerprint sensor.)*
 
-
-### 📸 Python Face Recognition
-- 🤖 [Face Recognition System](docs/Face_Recognition.md)  
-  *(Explains how the PC uses OpenCV to detect faces and send unlock signals to ESP32.)*
 
 ### 🔌 PCB Design (KiCad)
 - 🛠️ [KiCad PCB Schematic & Layout](docs/PCB_Design.md)  
