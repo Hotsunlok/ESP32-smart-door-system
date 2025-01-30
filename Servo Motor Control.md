@@ -31,10 +31,11 @@ The **signal pin** on **GPIO 13** receives commands from the ESP32 to rotate the
 ## ⚠️ **Very Important: Servo Motor Angles**
 The **SG90 servo motor** operates at **two critical angles** to control the **door lock mechanism**:
 
-| **Angle (Degrees)** | **Action** |
-|-------------------|-------------|
-| 🔒 **110°**      | **Locks** the door (pushes the steel rod into the sliding bolt lock). |
-| 🔓 **50°**       | **Unlocks** the door (pulls the steel rod out of the sliding bolt lock). |
+| **Angle (Degrees)** | **Action** | **Illustration** |
+|-------------------|-------------|------------------|
+| 🔒 **110°**      | **Locks** the door (pushes the steel rod into the sliding bolt lock). | ![Lock Image](lock_image.png) |
+| 🔓 **50°**       | **Unlocks** the door (pulls the steel rod out of the sliding bolt lock). | ![Unlock Image](unlock_image.png) |
+
 
 👉 The ESP32 sends a signal to **rotate the servo** between these two positions when a valid unlock method is used.
 
