@@ -52,6 +52,7 @@ Below is a **screenshot of the web server interface**, showing the complete layo
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
 The web server allows users to **toggle between Bright and Dark Mode** for the background color.
+The toggle switch button is located at right corner of the web server.
 
 | **Toggle Switch State** | **Website Background Color** |
 |------------------------|---------------------------|
