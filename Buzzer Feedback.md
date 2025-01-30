@@ -62,7 +62,7 @@ When the user **enters the wrong password** (via **Keypad**), the **buzzer will 
 - This provides an **audio alert** that access was **denied**.
 
 🖼 **Visual Representation:**  
-![Buzzer Wrong Authentication](docs/images/buzzer_wrong_simple.png)
+![Buzzer Wrong Authentication](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2acbe38b9b17501bb37a8639c6d5226fe32725f5/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-01-30%20075153.jpg)
 
 ---
 
