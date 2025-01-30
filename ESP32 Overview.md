@@ -70,6 +70,8 @@ ESP32 hosts a real-time **web server** where users can:
 server.on("/", HTTP_GET, handleRoot);
 ws.onEvent(onWebSocketEvent);
 ```
+📖 **For more details, check out the full** [Web Server Documentation](Web_Server.md).
+
 ---
 # 🔷 ESP32’s Role in the Smart Door System
 
@@ -93,3 +95,16 @@ Whenever a user **successfully authenticates**, ESP32 calls this function (FOR E
 controlDoor(doorLocked, "fingerprint");
 ```
 ---
+### 🔄 What Happens After `controlDoor()` is Called?
+
+Once `controlDoor(doorLocked, method)` is executed, ESP32 checks the **lock state** (`doorLocked` variable) and **sends different commands** to the output components:
+
+- **📟 LCD Display** → Updates to show either `"Door Locked"` or `"Door Unlocked"`.
+- **🔊 Buzzer** → 
+  - Beeps **once** for successful authentication.
+  - Beeps **twice** if authentication fails.
+- **🔧 Servo Motor** → Rotates **110° (Locked) / 50° (Unlocked)**.
+- **🌍 Web Server Toggle Switch** → Changes state **automatically**.
+- **📝 Access Log Display** → Updates with the event: 
+  - ✅ `"The door is unlocked (by RFID/Keypad/Fingerprint)"`
+  - ❌ `"Wrong Access (by Keypad/RFID/etc.)"`
