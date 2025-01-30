@@ -12,4 +12,4 @@ The **SG90 Servo Motor** is the key mechanism responsible for **unlocking and lo
 The **servo motor** moves a **steel rod**, which **pushes or pulls** the **sliding bolt lock**, allowing the door to be securely locked or unlocked.
 
 #### **📸 How the Servo Motor Connects to the Door Lock**
-![Servo Motor Door Lock Mechanism](#) *(Replace `#` with your provided image of the connection setup)*
+![Servo Motor Door Lock Mechanism](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e42f3587dad0d0657aba5c3ec854f671800a46de/smartdoorsystempics.jpg) 
