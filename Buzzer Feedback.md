@@ -7,7 +7,7 @@ The **buzzer** provides an **auditory response** to indicate whether access is *
 
 
 ### 🛒 Purchase Link
-[🔗 Buy Buzzer on Amazon](https://www.amazon.com/your-buzzer-link-here)
+[🔗 Buy Buzzer on Amazon](https://www.amazon.co.uk/Buzzer-Electromagnetic-Active-Electronic-Directly/dp/B07Y653F2S)
 
 ---
 ### 📌 **Buzzer Pin Connections**
