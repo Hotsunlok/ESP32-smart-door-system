@@ -28,7 +28,7 @@ When the user **enters the correct password** (by **Keypad**, **Fingerprint**, *
 - This provides an **audio confirmation** that the door has been locked or unlocked.
 
 🖼 **Visual Representation:**  
-![Buzzer Confirmation](docs/images/buzzer_correct_simple.png)  
+![Buzzer Confirmation](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5fcc2037695b521aef675372914df5a86b403ccd/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-01-30%20072436.jpg)  
 
 ---
 
