@@ -266,3 +266,22 @@ else if (message == "lock") {
 ✔ **The Servo Motor Moves:** Unlocks the door by pushing the sliding bolt.  
 ✔ **LCD Updates:** Displays "Door Locked" message.  
 ✔ **Buzzer Feedback:** Beeps once to confirm the unlock action.
+
+---
+
+## 🔄 Auto-Update Toggle Switch Button  
+
+The **toggle switch button** automatically updates based on the **doorLocked variable** to reflect the **current door state**.  
+
+### 📌 **How It Works:**  
+✔ **Successful Authentication:** When the correct password is entered (**via Keypad, RFID, Fingerprint, or Website**), the **doorLocked variable updates**.  
+✔ **Toggle Switch Auto-Updates:**  
+   - If `doorLocked = false`, the **toggle switch slides to green (unlocked)**.  
+   - If `doorLocked = true`, the **toggle switch slides to red (locked)**.  
+✔ **Real-Time Feedback:** Ensures the **toggle switch state accurately represents the actual door state** to prevent confusion.  
+
+---
+
+### 🖼 Visual Representation of Auto-Update  
+![Auto-Update Toggle Switch](UPLOAD_YOUR_IMAGE_HERE)  
+
