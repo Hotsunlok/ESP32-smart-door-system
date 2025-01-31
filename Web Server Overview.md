@@ -196,7 +196,7 @@ The **toggle switch button** allows users to **manually** slide between **locked
 When the user **slides the toggle switch from red (locked) to green (unlocked)**, the ESP32 processes the unlock request and **triggers the servo motor to unlock the door**.
 
 🖼 **Green Toggle Switch Button (Unlocked State):**  
-![Green Toggle Switch](docs/images/toggle_switch_unlocked.png)  
+![Green Toggle Switch](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/06abd7f289c63fbe16c6d7ec03f38d18c8903890/greenbutton.jpg)  
 
 ---
 
@@ -210,3 +210,37 @@ if (message == "unlock") {
         controlDoor(doorLocked, "website");  
     }  
 }
+```
+---
+### ✅ What Happens When the Toggle Switch is Slid to Green (Unlock)?
+
+✔ **The Servo Motor Moves:** Unlocks the door by pulling the sliding bolt.  
+✔ **LCD Updates:** Displays "Door Unlocked" message.  
+✔ **Buzzer Feedback:** Beeps once to confirm the unlock action.
+---
+## 🔴 Case 2: Sliding from Unlocked (Green) to Locked (Red)  
+
+When the user **slides the toggle switch from green (unlocked) to red (locked)**, the ESP32 processes the lock request and **triggers the servo motor to lock the door**.
+
+🖼 **Red Toggle Switch Button (Locked State):**  
+![Red Toggle Switch](UPLOAD_YOUR_IMAGE_HERE)  
+
+---
+
+### 🛠 **Code Execution for Locking**  
+When the **lock command** is received, the ESP32 updates the `doorLocked` variable and calls `controlDoor()` to activate all output components.  
+
+```cpp
+else if (message == "lock") {  
+    if (!doorLocked) {  
+        doorLocked = true;  
+        controlDoor(doorLocked, "website");  
+    }  
+}
+```
+
+### ✅ What Happens When the Toggle Switch is Slid to Red (Lock)?
+
+✔ **The Servo Motor Moves:** Unlocks the door by pushing the sliding bolt.  
+✔ **LCD Updates:** Displays "Door Locked" message.  
+✔ **Buzzer Feedback:** Beeps once to confirm the unlock action.
