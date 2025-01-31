@@ -173,3 +173,24 @@ if (p == FINGERPRINT_OK) {
 ```
 ### 📸 **fingerprint sensor whole process flow:**
 ![fingerprint sensor whole process flow](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1a545b59880407005bbf9f95d3cf70a360adaa20/fingerprintvertfity2.jpg)
+---
+# 🔓 **FIRST CASE: Correct Fingerprint Access - Unlocking the Door**
+
+# 🔓 **Correct Fingerprint Access - Unlocking the Door**
+
+Once the code is updated, the **LCD** will display `"Welcome Password"`, ensuring the system starts in a locked state.  
+At this point, the **servo motor** immediately rotates to **110°**, pushing the **sliding bolt lock into the locked position**.
+
+When the user **places the correct fingerprint** (e.g., **right thumb**) on the **R307 Fingerprint Sensor**, the **fingerprint reader detects and verifies it**.  
+During verification, the **LCD updates to "Thinking..."** while processing.
+
+If the fingerprint **matches a stored fingerprint**, the **LCD updates to "Unlocked"**, and the **buzzer beeps once** as feedback.  
+Simultaneously, the **servo motor rotates to 50°**, pulling the **sliding bolt into the unlocked position**.
+
+On the **web interface**, the **toggle switch** automatically moves **from red (locked) to green (unlocked)**.  
+The **access log** updates from `"1. The door is locked."` to `"2. The door is unlocked (by fingerprint)."`
+
+---
+
+## 📸 **Physical Response to Correct Fingerprint (Unlocking)**
+![Correct Fingerprint Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/fingerprint_unlock_flowchart.jpg)
