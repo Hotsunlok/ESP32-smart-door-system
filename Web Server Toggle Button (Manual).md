@@ -2,7 +2,7 @@
 
 Before reading this section, it is assumed that you have already read the **[Web Server Overview](Web%20Server%20Overview.md)**, especially the **three cases** of the **toggle switch button behavior**. 
 
-In this section, we will specifically explain **Case 1** and **Case 2** in detail.
+In this section, we will specifically explain **Case 1** and **Case 2** and **Auto-Lock Timer** in detail.
 
 ---
 
@@ -148,5 +148,5 @@ void controlDoor(bool lock, String method) {
 }
 ```
 ### 🖼 Physical System of Auto-Lock Timer  
-![Auto-Lock Timer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b9c9badf4eea30a0e114956239290f16a34299ba/redswitchphyscial.jpg)
+![Auto-Lock Timer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/79bafb8c9da91a1fc2283a6d08934aaeb306cb10/autophysical.jpg)
 ---
