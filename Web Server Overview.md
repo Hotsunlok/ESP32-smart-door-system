@@ -177,5 +177,5 @@ The **"Smart Door" logo** on the web server has two unique **visual effects**:
 ![Floating Logo Light Mode](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6e8be9b2b424b340aeccd2ce705aff499ab92459/brightlogo.jpg)
 
 🖼 **Dynamic Colors & Floating Logo (Dark Mode):**  
-![Floating Logo Dark Mode](docs/images/floating_logo_dark.png)
+![Floating Logo Dark Mode](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3efdc96c2ba67ea648f76050c5670af9fd4d331b/darklogo.jpg)
 
