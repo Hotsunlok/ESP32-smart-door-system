@@ -60,14 +60,14 @@ This is **especially important for the enrollment process** because the code ass
 
 ## ✅ **Fingerprint Enrollment - Thumb Database Stored**  
 
-I have successfully **used the enrollment code** from the provided tutorial to **store my thumb fingerprint** into **storage location `1`**.  
+I have successfully **used the enrollment code** from the provided tutorial to **store my right thumb fingerprint** into **storage location `1`**.  
 
 📌 **What This Means:**  
-- The system is now **ready to recognize my thumb fingerprint** for unlocking/locking the door.  
+- The system is now **ready to recognize my right thumb fingerprint** for unlocking/locking the door.  
 - Any **fingerprint that is not stored** will **not be recognized** by the sensor.  
 
 ---
 
-### 🖼 **Thumb Fingerprint Enrollment Record**  
-![Thumb Fingerprint Enrollment](UPLOAD_YOUR_IMAGE_HERE)
+### 🖼 **Right Thumb Fingerprint Enrollment Record**  
+![Thumb Fingerprint Enrollment](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5f299af6d74d09be147f61894c4203287f9f7841/correctfinger.jpg)
 
