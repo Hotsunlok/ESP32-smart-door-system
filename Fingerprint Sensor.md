@@ -172,4 +172,4 @@ if (p == FINGERPRINT_OK) {
 }
 ```
 ### 📸 **fingerprint sensor whole process flow:**
-![fingerprint sensor whole process flow](YOUR_IMAGE_LINK_HERE)
+![fingerprint sensor whole process flow](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1a545b59880407005bbf9f95d3cf70a360adaa20/fingerprintvertfity2.jpg)
