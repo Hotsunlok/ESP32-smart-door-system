@@ -174,7 +174,7 @@ The **"Smart Door" logo** on the web server has two unique **visual effects**:
 2️⃣ **Floating Animation**: The logo moves **up and down smoothly** in a **continuous motion**.
 
 🖼 **Dynamic Colors & Floating Logo (Light Mode):**  
-![Floating Logo Light Mode](docs/images/floating_logo_light.png)
+![Floating Logo Light Mode](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6e8be9b2b424b340aeccd2ce705aff499ab92459/brightlogo.jpg)
 
 🖼 **Dynamic Colors & Floating Logo (Dark Mode):**  
 ![Floating Logo Dark Mode](docs/images/floating_logo_dark.png)
