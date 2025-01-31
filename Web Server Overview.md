@@ -179,3 +179,34 @@ The **"Smart Door" logo** on the web server has two unique **visual effects**:
 🖼 **Dynamic Colors & Floating Logo (Dark Mode):**  
 ![Floating Logo Dark Mode](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3efdc96c2ba67ea648f76050c5670af9fd4d331b/darklogo.jpg)
 
+---
+
+## 🔄 Toggle Switch Button - Controlling the Servo Motor  
+
+The **toggle switch button** allows users to **manually** slide between **locked (red)** and **unlocked (green)** states, or it can be **automatically updated** by other authentication methods (Keypad, RFID, Fingerprint, etc.).  
+
+### 💡 Why Is This Feature Important?  
+✔ **Remote Control:** Users can **lock/unlock the door remotely** by simply sliding the button.  
+✔ **User-Friendly:** It is **convenient and intuitive** to operate from a distance.  
+✔ **Triggers All Output Components:** The **LCD, Buzzer, and Servo Motor** respond accordingly.  
+
+---
+## 🟢 Case 1: Sliding from Locked (Red) to Unlocked (Green)  
+
+When the user **slides the toggle switch from red (locked) to green (unlocked)**, the ESP32 processes the unlock request and **triggers the servo motor to unlock the door**.
+
+🖼 **Green Toggle Switch Button (Unlocked State):**  
+![Green Toggle Switch](docs/images/toggle_switch_unlocked.png)  
+
+---
+
+### 🛠 **Code Execution for Unlocking**  
+When the **unlock command** is received, the ESP32 updates the `doorLocked` variable and calls `controlDoor()` to activate all output components.  
+
+```cpp
+if (message == "unlock") {  
+    if (doorLocked) {  
+        doorLocked = false;  
+        controlDoor(doorLocked, "website");  
+    }  
+}
