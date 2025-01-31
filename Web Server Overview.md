@@ -70,8 +70,50 @@ If the user **does not enter the password** but **attempts to slide the toggle s
 - The **toggle switch visually changes**, but the **servo motor does NOT move**.
 - The **auto-lock timer does NOT activate**.
 
+🖥️ **Code Section**  
+The following JavaScript function ensures that users **must enter the correct password** before using the toggle switch:
+
+```javascript
+function handleChange() {
+    if (!passwordVerified) {
+        alert('Please enter the correct password first.');
+        document.getElementById('switch-1').checked = doorLocked; // Reset switch state
+        return;
+    }
+}
+```
 🖼 **Flowchart Representation:**  
 ![Password Verification Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8a93a33afe6b42ea867b3a3e95d8c6104a9650ee/password%20vertifcationfirst.jpg)
+---
+
+### ❌ Case 2: User Enters Wrong Password
+
+If the user enters the **wrong password** (e.g., `"123"`) and presses the green **"Verify"** button, the system will:
+
+📌 **What Happens:**  
+- Display an **alert message**: `"Incorrect password. Please try again."`
+- The **toggle switch still allows sliding**, but **no message is sent to ESP32**.
+- The **servo motor remains locked** and does NOT move.
+- **Timer behavior**: The toggle switch remains in a fixed **green (right)** state, but it does **NOT** activate the auto-lock timer.
+
+🖥️ **Code Section**  
+The JavaScript function below checks whether the entered password is **correct or incorrect** and handles the response accordingly:
+
+```javascript
+function verifyPassword() {
+    const password = document.getElementById('password').value;
+    if (password === '1234') {  // Correct Password
+        passwordVerified = true;
+        document.getElementById('passwordBox').style.display = 'none'; // Hide input box
+        alert('Password correct! You can now use the switch to unlock or lock the door.');
+    } else {  // Incorrect Password
+        alert('Incorrect password. Please try again.');
+    }
+}
+```
+🖼 **Flowchart Representation:**  
+![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/docs/images/password_wrong_flowchart.png)
+
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
