@@ -217,4 +217,4 @@ Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **
 ![Correct Fingerprint Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/45d194f3b23fc98f2ec4366ba496926e302eef31/fingerprintlock.jpg)
 
 ## 📸 **Web Interface Once Door Is locked By Fingerprint**
-![web interface once door is locked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0e0dab94c976831b02e35dfbb840987ec78d1af7/%E5%9C%96%E7%89%875.jpg)
+![web interface once door is locked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c9faa05169b3634ed50eea140485e1a3ce257b5e/%E5%9C%96%E7%89%876.jpg)
