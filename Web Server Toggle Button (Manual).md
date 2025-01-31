@@ -50,4 +50,51 @@ void controlDoor(bool lock, String method) {
 }
 ```
 ### 🖼 Physical System of Toggle Switch Unlocking (Green)  
-![Green Toggle Switch Unlock](UPLOAD_YOUR_IMAGE_HERE)
+![Green Toggle Switch Unlock](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/47aa88fa813dff734f4740a02ddb9a84ae1a469c/grenlockphysical.jpg)
+---
+## 🔴 **Case 2: Sliding from Unlocked (Green) to Locked (Red)**  
+
+When the user **slides the toggle switch to the left (red)**:
+
+### 🔧 **What Happens?**  
+✔ **Servo Motor Moves**: Rotates **110 degrees** to push the door lock and **lock** it.  
+✔ **Buzzer Feedback**: Beeps **once** to confirm the lock action.  
+✔ **LCD Display Updates**: Changes from `"Welcome Password"` to `"Locked"`.  
+✔ **Access Log Box Updates**: Displays **"3. The door is locked (by website)."**  
+
+---
+
+### 🛠 **Code Execution for Locking**  
+When the **lock command** is received, the ESP32 updates the `doorLocked` variable and calls `controlDoor()` to activate all output components.  
+
+```cpp
+else if (message == "lock") {  
+    if (!doorLocked) {  
+        doorLocked = true;  
+        controlDoor(doorLocked, "website");  
+    }  
+}
+
+void controlDoor(bool lock, String method) {
+    if (lock) {
+        // Move servo motor to lock the door
+        servo.write(110);  
+
+        // Update LCD display
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Door Locked");
+
+        // Buzzer feedback - Beep once
+        digitalWrite(BUZZER_PIN, HIGH);
+        delay(300);
+        digitalWrite(BUZZER_PIN, LOW);
+
+        // Send real-time update to access log
+        ws.textAll("3. The door is locked (by " + method + ").");
+    }
+}
+```
+### 🖼 Physical System of Toggle Switch Unlocking (Red)  
+![Red Toggle Switch Unlock](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/47aa88fa813dff734f4740a02ddb9a84ae1a469c/grenlockphysical.jpg)
+---
