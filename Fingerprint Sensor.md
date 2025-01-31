@@ -176,8 +176,6 @@ if (p == FINGERPRINT_OK) {
 ---
 # 🔓 **FIRST CASE: Correct Fingerprint Access - Unlocking the Door**
 
-# 🔓 **Correct Fingerprint Access - Unlocking the Door**
-
 Once the code is updated, the **LCD** will display `"Welcome Password"`, ensuring the system starts in a locked state.  
 At this point, the **servo motor** immediately rotates to **110°**, pushing the **sliding bolt lock into the locked position**.
 
@@ -194,3 +192,7 @@ The **access log** updates from `"1. The door is locked."` to `"2. The door is u
 
 ## 📸 **Physical Response to Correct Fingerprint (Unlocking)**
 ![Correct Fingerprint Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
+
+## 📸 **Web Interface Once Door Is Unlocked By Fingerprint**
+![web interface once door is unlocked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
+
