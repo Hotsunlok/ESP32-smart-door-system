@@ -269,7 +269,7 @@ else if (message == "lock") {
 
 ---
 
-## 🔄 Auto-Update Toggle Switch Button  
+## 🔄 Case 3: Auto-Update Toggle Switch Button  
 
 The **toggle switch button** automatically updates based on the **doorLocked variable** to reflect the **current door state**.  
 
@@ -301,4 +301,4 @@ The **access log box** dynamically updates in **real-time** using the **WebSocke
 ---
 
 ### 🖼 Example Screenshot of Access Log  
-![Access Log Example](UPLOAD_YOUR_IMAGE_HERE)  
+![Access Log Example](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0cc81f25518f48d6a158ef6777a9f1b932d37107/accesslogmessage.jpg)  
