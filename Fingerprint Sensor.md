@@ -71,3 +71,105 @@ I have successfully **used the enrollment code** from the provided tutorial to *
 ### 🖼 **Right Thumb Fingerprint Enrollment Record**  
 ![Thumb Fingerprint Enrollment](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5f299af6d74d09be147f61894c4203287f9f7841/correctfinger.jpg)
 
+---
+
+## 🔗 ESP32 Communication with R307 Sensor  
+
+The **ESP32** communicates with the **R307 fingerprint sensor** using the **correct RX/TX pins**.  
+Before reading a fingerprint, the **ESP32 first verifies** if the fingerprint sensor is connected correctly.
+
+📌 **finger.verifyPassword()** is used to **check the fingerprint sensor**:  
+- ✅ **If successful:** It prints `"Found fingerprint sensor!"` to the **Serial Monitor**.  
+- ❌ **If failed:** It prints `"Did not find fingerprint sensor :("` to the **Serial Monitor**.  
+
+---
+
+### 🛠 **Code Execution: Checking Sensor Connection**  
+```cpp
+mySerial.begin(57600, SERIAL_8N1, 16, 17);  // RX = GPIO16, TX = GPIO17 for Serial1
+
+if (finger.verifyPassword()) {
+    Serial.println("Found fingerprint sensor!");
+} else {
+    Serial.println("Did not find fingerprint sensor :(");
+    while (1) { delay(1); }  // Halt execution if sensor is not detected
+}
+```
+## 🔎 Capturing Fingerprint for Verification  
+
+Once the **fingerprint sensor** is **confirmed to be working**,  
+it proceeds to **capture the user's fingerprint** when they place their finger on the sensor.
+
+### 🔥 `getFingerprintID()` function:
+- **Detects when a fingerprint is placed** on the sensor.
+- **Stores the scanned fingerprint** in the variable `p`.
+- If the fingerprint is **not detected or incorrect**, it does nothing.
+
+---
+
+### 🛠 **Code Execution: Capturing Fingerprint**
+When the **user places a finger** on the sensor, the ESP32 captures the fingerprint data.
+
+```cpp
+void getFingerprintID() {  
+    uint8_t p = finger.getImage();   // Capture fingerprint image  
+
+    if (p != FINGERPRINT_OK) {  
+        return;  // No finger or error, do nothing  
+    }  
+}
+```
+## 🔄 Converting Fingerprint Image into Template  
+
+After **capturing**, the fingerprint image needs to be **converted into a digital template**.  
+This is necessary because **raw fingerprint images cannot be directly compared**.
+
+### 🔥 How It Works?  
+✔ **The function `finger.image2Tz()` converts** the captured image into a fingerprint **template**.  
+✔ The **template will be used for comparison** with pre-stored fingerprints.  
+
+---
+
+### 🛠 **Code Execution: Converting Fingerprint Image**  
+
+```cpp
+p = finger.image2Tz();
+
+if (p != FINGERPRINT_OK) {
+    // Could not process fingerprint
+    showError("fingerprint");
+    return;
+}
+```
+## 🔍 Fingerprint Verification  
+
+Once the **fingerprint template** is ready, it will be **compared with pre-stored fingerprints**.
+
+### 🔥 What Happens?  
+✔ **If matched**, the system **unlocks/locks** the door and updates the **LCD, buzzer, and log**.  
+❌ **If not matched**, the system **triggers an error message** and **beeps twice**.  
+
+---
+
+### 🛠 **Code Execution: Fingerprint Verification**  
+
+```cpp
+p = finger.fingerSearch();
+
+if (p == FINGERPRINT_OK) {
+    // Check if matched fingerprint ID is 1 (user's fingerprint)
+    if (finger.fingerID == 1) {
+        // Correct fingerprint
+        doorLocked = !doorLocked;  // Toggle door status
+        controlDoor(doorLocked, "fingerprint");
+    } else {
+        // Not the user's fingerprint
+        showError("fingerprint");
+    }
+} else {
+    // Fingerprint not recognized
+    showError("fingerprint");
+}
+```
+### 📸 **fingerprint sensor whole process flow:**
+![fingerprint sensor whole process flow](YOUR_IMAGE_LINK_HERE)
