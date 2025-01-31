@@ -96,5 +96,5 @@ void controlDoor(bool lock, String method) {
 }
 ```
 ### 🖼 Physical System of Toggle Switch Unlocking (Red)  
-![Red Toggle Switch Unlock](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/47aa88fa813dff734f4740a02ddb9a84ae1a469c/grenlockphysical.jpg)
+![Red Toggle Switch Unlock](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b9c9badf4eea30a0e114956239290f16a34299ba/redswitchphyscial.jpg)
 ---
