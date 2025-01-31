@@ -194,5 +194,24 @@ The **access log** updates from `"1. The door is locked."` to `"2. The door is u
 ![Correct Fingerprint Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
 
 ## 📸 **Web Interface Once Door Is Unlocked By Fingerprint**
-![web interface once door is unlocked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
+![web interface once door is unlocked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0e0dab94c976831b02e35dfbb840987ec78d1af7/%E5%9C%96%E7%89%875.jpg)
 
+---
+# 🔒 **SECOND CASE: Correct Fingerprint Access - Locking the Door**
+
+After the user successfully unlocks the door, they can use their **fingerprint** to **lock the door again**.  
+
+When the **correct fingerprint** is placed on the **R307 Fingerprint Sensor**, the **LCD updates to "Locked"**, as shown below.  
+Immediately, the **servo motor rotates back to 110°**, pushing the **sliding bolt into the locked position**.  
+
+The **buzzer beeps once** as confirmation.
+
+On the **web interface**, the **toggle switch** automatically moves **from green (unlocked) to red (locked)**.  
+The **access log** updates from `"2. The door is unlocked (by fingerprint)."` to `"3. The door is locked (by fingerprint)."`
+
+Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **enter their access method again**.
+
+---
+
+## 📸 **Physical Response to Correct Fingerprint (Locking)**
+![Correct Fingerprint Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/fingerprint_lock_flowchart.jpg)
