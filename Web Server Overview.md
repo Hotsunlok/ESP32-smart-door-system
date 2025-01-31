@@ -285,3 +285,20 @@ The **toggle switch button** automatically updates based on the **doorLocked var
 ### 🖼 Visual Representation of Auto-Update  
 ![Auto-Update Toggle Switch](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/eff865a5ed4194c8a792ada9f70425b070b36be9/auto-button.jpg)  
 
+---
+
+## 📜 Real-Time Access Log Box  
+
+The **access log box** dynamically updates in **real-time** using the **WebSocket protocol**, without requiring page refreshes.  
+
+### 📌 **How It Works:**  
+✔ **Event Logging:** Every access attempt is logged with:  
+   - **Event Number** (1, 2, 3, 4, ...)  
+   - **Door State** (`Locked` or `Unlocked`)  
+   - **Access Method** (`Keypad`, `RFID`, `Fingerprint`, or `Website`)  
+✔ **Real-Time Updates:** WebSocket ensures that each log entry is displayed **instantly** as an event occurs.  
+
+---
+
+### 🖼 Example Screenshot of Access Log  
+![Access Log Example](UPLOAD_YOUR_IMAGE_HERE)  
