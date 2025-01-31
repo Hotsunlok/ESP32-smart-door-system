@@ -113,7 +113,46 @@ function verifyPassword() {
 ```
 🖼 **Flowchart Representation:**  
 ![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9a1926dd4d3dac89c83d371273d0576741b9f00f/passwordvertifcationsecond.jpg)
+---
 
+### ✅ Case 3: User Entered Correct Password  
+
+If the user **enters the correct password** (`"1234"`) and presses **"Verify"**, the system will:
+
+📌 **What Happens:**  
+- Display an **alert message**: `"Password correct! You can now use the switch to unlock or lock the door."`
+- The **password verification box disappears**, confirming that the user **does not need to re-enter the password**.
+- The user can now **toggle the switch freely** between **left (red) → lock** and **right (green) → unlock**.
+- The ESP32 **receives a message**, and the **servo motor moves** to either **push** or **pull** the sliding bolt lock.
+
+🖥️ **Code Section**  
+The JavaScript function below ensures the system processes a **correct password** properly:
+
+```javascript
+function verifyPassword() {
+    const password = document.getElementById('password').value;
+    if (password === '1234') {  // Correct Password
+        passwordVerified = true;
+        document.getElementById('passwordBox').style.display = 'none'; // Hide input box
+        alert('Password correct! You can now use the switch to unlock or lock the door.');
+    } else {  // Incorrect Password
+        alert('Incorrect password. Please try again.');
+    }
+}
+
+function handleChange() {
+    if (!passwordVerified) {  // Prevent action if password is not entered
+        alert('Please enter the correct password first.');
+        document.getElementById('switch-1').checked = doorLocked;
+        return;
+    }
+    // Send toggle switch state to ESP32
+}
+```
+🖼 **Flowchart Representation:**  
+![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9a1926dd4d3dac89c83d371273d0576741b9f00f/passwordvertifcationsecond.jpg)
+
+---
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
