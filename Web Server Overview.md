@@ -48,6 +48,29 @@ Below is a **screenshot of the web server interface**, showing the complete layo
 ![Web Server Screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/dde994014058fbe2cb3d35e2f19313285ace89e0/IMG_2781.PNG)
 
 ---
+## 🔐 Web Interface Password Verification
+
+Once the device has just entered the **web interface**, a **password verification box** will be displayed.  
+This step ensures that only **authorized users** can control the **toggle switch button** to lock/unlock the door, preventing **unauthorized access**.
+
+---
+
+### 📸 Password Verification Box  
+_(Upload image of the password verification box here)_
+
+---
+
+### 🚫 Case 1: User Did Not Enter Password & Tried to Toggle the Switch  
+
+If the user **does not enter the password** but **attempts to slide the toggle switch** to the **right (green)**, the system will:
+
+📌 **What Happens:**  
+- Display an **alert message**: `"Please enter the correct password first."`
+- The **toggle switch visually changes**, but the **servo motor does NOT move**.
+- The **auto-lock timer does NOT activate**.
+
+🖼 **Flowchart Representation:**  
+_(Upload the flowchart image here)_
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
