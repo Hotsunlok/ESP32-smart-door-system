@@ -26,7 +26,7 @@ This system consists of two main sections:
 - 🔢 [Keypad Authentication](docs/Keypad.md)  
 - 📡 [RFID System](docs/RFID.md)  
 - 🏷️ [Fingerprint Sensor](docs/Fingerprint.md)  
-- 🎛️ [Web Server Toggle Button (Manual)](docs/Web_Toggle.md)    
+- 🎛️ [Web Server Toggle Button (Manual)](Web Server Toggle Button (Manual).md)   
 - 🤖 [Face Recognition System](docs/Face_Recognition.md)  
   *(PC uses connected camera with Python OpenCV to detect faces and send unlock signals to ESP32.)*  
 
