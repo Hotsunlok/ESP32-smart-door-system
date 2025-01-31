@@ -112,7 +112,7 @@ function verifyPassword() {
 }
 ```
 🖼 **Flowchart Representation:**  
-![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/docs/images/password_wrong_flowchart.png)
+![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9a1926dd4d3dac89c83d371273d0576741b9f00f/passwordvertifcationsecond.jpg)
 
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
