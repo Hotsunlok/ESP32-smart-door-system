@@ -150,7 +150,7 @@ function handleChange() {
 }
 ```
 🖼 **Flowchart Representation:**  
-![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9a1926dd4d3dac89c83d371273d0576741b9f00f/passwordvertifcationsecond.jpg)
+![Password Incorrect Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/82e01ab81b100b83fa85416bc8e4eb55b1f338fb/passwordvertficationthird.jpg)
 
 ---
 
