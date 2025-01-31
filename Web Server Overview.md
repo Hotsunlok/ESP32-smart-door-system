@@ -164,4 +164,18 @@ The toggle switch button is located at right corner of the web server.
 | 🌞 Bright Mode  | ![Light Mode Preview](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/22d66dc8e34a175a1ffef51a429d923c3def3629/IMG_2774.PNG) |
 | 🌙 Dark Mode  | ![Dark Mode Preview](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/634c33304805957b2c7cbcf3c1b20e0222ee1fb8/IMG_2805%20(1).PNG) |
 
+---
+
+## 🎨 Floating Dynamic Color Logo - "Smart Door"  
+
+The **"Smart Door" logo** on the web server has two unique **visual effects**:  
+
+1️⃣ **Dynamic Colors**: The text cycles through **pink, orange, yellow, green, and sky blue** in a smooth sequence.  
+2️⃣ **Floating Animation**: The logo moves **up and down smoothly** in a **continuous motion**.
+
+🖼 **Dynamic Colors & Floating Logo (Light Mode):**  
+![Floating Logo Light Mode](docs/images/floating_logo_light.png)
+
+🖼 **Dynamic Colors & Floating Logo (Dark Mode):**  
+![Floating Logo Dark Mode](docs/images/floating_logo_dark.png)
 
