@@ -11,7 +11,8 @@ This is a **smart door lock** project using an ESP32, Face ID (Python + OpenCV),
 ---
 ## 🌍 **Web Server Feature Overview**
 *(Explains WebSocket, UI features, background themes, logs, and toggle controls.)*  
-- 🌍 [Web Server Overview](docs/Web_Server.md)  
+- 🌍 [Web Server Overview](Web%20Server%20Overview.md)
+ 
 ---
 ### 🛠️ System Components  
 This system consists of two main sections:  
