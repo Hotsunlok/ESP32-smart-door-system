@@ -44,4 +44,30 @@ If you need a reference, please visit the following **tutorials**:
 
 🔹 **Fingerprint Enrollment and Matching Guide:** [Upload Enrollment and Matching Tutorial Link Here](https://www.instructables.com/Interfacing-Fingerprint-Sensor-With-Arduino/)  
 
+---
+
+## ⚠️ **Precaution Reminder - Fingerprint Enrollment is Required!**
+
+Before using the **R307 Fingerprint Sensor**, you must **store fingerprints into a storage location**.  
+This is **especially important for the enrollment process** because the code assumes that **your fingerprint has already been saved**.
+
+📌 **Important Note:**  
+- The current system assumes that **your thumb fingerprint is stored in location `1`**.  
+- **If you have not saved your fingerprint,** the sensor **WILL NOT** recognize your fingerprint.  
+- Follow the **fingerprint enrollment guide** to **correctly store fingerprints** before testing.
+
+---
+
+## ✅ **Fingerprint Enrollment - Thumb Database Stored**  
+
+I have successfully **used the enrollment code** from the provided tutorial to **store my thumb fingerprint** into **storage location `1`**.  
+
+📌 **What This Means:**  
+- The system is now **ready to recognize my thumb fingerprint** for unlocking/locking the door.  
+- Any **fingerprint that is not stored** will **not be recognized** by the sensor.  
+
+---
+
+### 🖼 **Thumb Fingerprint Enrollment Record**  
+![Thumb Fingerprint Enrollment](UPLOAD_YOUR_IMAGE_HERE)
 
