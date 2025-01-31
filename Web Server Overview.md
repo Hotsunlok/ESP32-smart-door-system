@@ -71,7 +71,7 @@ If the user **does not enter the password** but **attempts to slide the toggle s
 - The **auto-lock timer does NOT activate**.
 
 🖼 **Flowchart Representation:**  
-![Password Verification Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/docs/images/password_flowchart.png)
+![Password Verification Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8a93a33afe6b42ea867b3a3e95d8c6104a9650ee/password%20vertifcationfirst.jpg)
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
