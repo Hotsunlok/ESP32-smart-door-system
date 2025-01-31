@@ -223,7 +223,7 @@ if (message == "unlock") {
 When the user **slides the toggle switch from green (unlocked) to red (locked)**, the ESP32 processes the lock request and **triggers the servo motor to lock the door**.
 
 🖼 **Red Toggle Switch Button (Locked State):**  
-![Red Toggle Switch](UPLOAD_YOUR_IMAGE_HERE)  
+![Red Toggle Switch](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5292d95be10747df4f51d2c827e8ff80d0973cb5/redbutton.jpg)  
 
 ---
 
