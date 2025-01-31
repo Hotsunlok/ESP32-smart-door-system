@@ -218,6 +218,28 @@ if (message == "unlock") {
 ✔ **LCD Updates:** Displays "Door Unlocked" message.  
 ✔ **Buzzer Feedback:** Beeps once to confirm the unlock action.
 ---
+---
+
+## ⏳ Auto-Lock Timer Mechanism  
+
+When the **toggle switch slides to the right (green color)**, an **auto-lock timer** will start counting down from **10 seconds**.  
+
+### 📌 **How It Works:**  
+✔ **Timer Starts:** Once unlocked, a **10-second countdown begins**.  
+✔ **No User Action:** If no manual locking action occurs, the system will **automatically lock** the door.  
+✔ **Automatic Locking:**  
+   - **LCD Updates:** Displays `"Locked"` message. *(Matches with 📺 LCD 1602 I2C: Auto-Lock Timer Display)*  
+   - **Toggle Switch:** Slides back to **red (locked) automatically**.  
+   - **Servo Motor:** Moves to **110 degrees** to **finish the locking process**. *(Matches with 🔄 SG90 Servo Motor: Auto-Lock Timer Mechanism)*  
+✔ **Timer Resets:** Once locked, the timer **freezes at 10 seconds** until the next unlock event.
+
+---
+
+### 🖼 Example Screenshot of Auto-Lock Timer in Web Interface  
+![Auto-Lock Timer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b969890a2ce6a9bc62bbd07495a9cddeb0554a2a/autolocktimer.jpg
+)  
+
+---
 ## 🔴 Case 2: Sliding from Unlocked (Green) to Locked (Red)  
 
 When the user **slides the toggle switch from green (unlocked) to red (locked)**, the ESP32 processes the lock request and **triggers the servo motor to lock the door**.
