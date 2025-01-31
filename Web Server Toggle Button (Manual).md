@@ -98,3 +98,55 @@ void controlDoor(bool lock, String method) {
 ### 🖼 Physical System of Toggle Switch Unlocking (Red)  
 ![Red Toggle Switch Unlock](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b9c9badf4eea30a0e114956239290f16a34299ba/redswitchphyscial.jpg)
 ---
+## ⏳ **Case 3: Auto-Lock Timer**  
+
+If the user **slides the toggle switch to the right (green)** to **unlock the door** but does **not** slide it back to the left (red) to lock the door within **10 seconds**, the system will:
+
+### 🔧 **What Happens?**  
+✔ **Web Timer Countdown**: Displays countdown from **00:10 to 00:00**.  
+✔ **Servo Motor Moves**: Rotates **110 degrees** to push the door lock and **lock** it.  
+✔ **Buzzer Feedback**: Beeps **once** to confirm the auto-lock action.  
+✔ **LCD Display Updates**: Changes from `"Unlocked"` to `"Locked"`, then back to `"Welcome Password"`.  
+✔ **Access Log Box Updates**: Displays **"5. The door is locked (by auto-lock)."**  
+
+---
+
+### 🛠 **Code Execution for Auto-Locking**  
+When the **timer reaches 00:00**, the ESP32 **automatically** locks the door and updates all output components.  
+
+```cpp
+void autoLockTimer() {
+    delay(10000);  // 10-second countdown
+    if (!doorLocked) {  
+        doorLocked = true;  
+        controlDoor(doorLocked, "auto-lock");  
+    }  
+}
+
+void controlDoor(bool lock, String method) {
+    if (lock) {
+        // Move servo motor to lock the door
+        servo.write(110);  
+
+        // Update LCD display
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Locked");
+        delay(2000);
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Welcome Password");
+
+        // Buzzer feedback - Beep once
+        digitalWrite(BUZZER_PIN, HIGH);
+        delay(300);
+        digitalWrite(BUZZER_PIN, LOW);
+
+        // Send real-time update to access log
+        ws.textAll("5. The door is locked (by " + method + ").");
+    }
+}
+```
+### 🖼 Physical System of Auto-Lock Timer  
+![Auto-Lock Timer](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b9c9badf4eea30a0e114956239290f16a34299ba/redswitchphyscial.jpg)
+---
