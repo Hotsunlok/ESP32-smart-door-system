@@ -6,7 +6,7 @@ It allows users to **place their fingerprint on the sensor**, and the system wil
 ---
 
 ## 📸 Component Image  
-![Upload Fingerprint Sensor Image Here](UPLOAD_YOUR_IMAGE_HERE)  
+![Upload Fingerprint Sensor Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/6ca8ccffe5c2c3b5e3d2222b82a1830413777334/41JBJ81tQzL._AC_US100_.jpg)  
 
 ---
 
