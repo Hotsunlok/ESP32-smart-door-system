@@ -283,5 +283,5 @@ The **toggle switch button** automatically updates based on the **doorLocked var
 ---
 
 ### 🖼 Visual Representation of Auto-Update  
-![Auto-Update Toggle Switch](UPLOAD_YOUR_IMAGE_HERE)  
+![Auto-Update Toggle Switch](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/eff865a5ed4194c8a792ada9f70425b070b36be9/auto-button.jpg)  
 
