@@ -56,7 +56,8 @@ This step ensures that only **authorized users** can control the **toggle switch
 ---
 
 ### 📸 Password Verification Box  
-_(Upload image of the password verification box here)_
+![Password Verification Box](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/db617ef3196e590160f9f0fb567348502f46f174/IMG_2789.jpg
+)  
 
 ---
 
@@ -70,7 +71,7 @@ If the user **does not enter the password** but **attempts to slide the toggle s
 - The **auto-lock timer does NOT activate**.
 
 🖼 **Flowchart Representation:**  
-_(Upload the flowchart image here)_
+![Password Verification Flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/docs/images/password_flowchart.png)
 
 ## 🎨 **Toggle Switch: Light/Dark Mode**
 
