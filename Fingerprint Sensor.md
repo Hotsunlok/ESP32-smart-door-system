@@ -193,4 +193,4 @@ The **access log** updates from `"1. The door is locked."` to `"2. The door is u
 ---
 
 ## 📸 **Physical Response to Correct Fingerprint (Unlocking)**
-![Correct Fingerprint Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/fingerprint_unlock_flowchart.jpg)
+![Correct Fingerprint Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
