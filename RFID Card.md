@@ -6,7 +6,7 @@ It detects the **user's RFID card** and checks if the **card ID matches an autho
 ---
 
 ## 📸 **Component Image**  
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/rc522_rfid_module.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0f91b7d94d00498f622182e936073ebd2f8c9e20/assets/%E5%9C%96%E7%89%874.jpg)
 
 ---
 
