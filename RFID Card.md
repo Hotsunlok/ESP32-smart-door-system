@@ -175,7 +175,7 @@ The **access log** updates from `"1. The door is locked."` to **"2. The door is 
 
 
 ## 📸 **Physical Response to Correct RFID CARD (Unlocking)**
-![Correct Card Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
+![Correct Card Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a824ed96a32631e6cd3bd1095002b6f6af437301/rfidunlock.jpg)
 
 ## 📸 **Web Interface Once Door Is Unlocked By Correct RFID CARD**
 ![web interface once door is unlocked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/401d8d9a35c0648f07a33bc2fd6a1c4908694f3f/assets/webRFIDUNLOCK.jpg)
