@@ -201,4 +201,29 @@ If the password **matches** the pre-set code (`"1234"`), the following actions o
 ![Keypad Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9bb0c271f22709f6961a770f23153990ad20814c/assets/keypadunlockingprocess.jpg)  
 
 ## 📸 **Web Interface Once Door Is Unlocked By keypad**
-![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0e0dab94c976831b02e35dfbb840987ec78d1af7/%E5%9C%96%E7%89%875.jpg)
+![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3751f2d17c6c4c0995f8a499e9911d61b202aeff/assets/webinterfacekeypad.jpg)
+
+---
+
+# 🔢 SECOND CASE: Correct Keypad Access - Locking the Door  
+
+After the user successfully unlocks the door, they can use the **keypad** to **lock the door again**.  
+
+## 📟 LCD & Physical Response  
+
+- The **LCD updates** to `"Locked"`, confirming that the door is secured.  
+- The **servo motor rotates back to 110°**, pushing the **sliding bolt into the locked position**.  
+- The **buzzer beeps once** as confirmation.  
+
+## 🌐 Web Interface Update  
+
+- The **toggle switch** automatically moves from **green (unlocked) to red (locked)**.  
+- The **access log updates** from `"2. The door is unlocked (by keypad)."` to `"3. The door is locked (by keypad)."`   
+
+---
+
+## 📷 Physical Response to Correct Keypad Password (Locking)  
+
+*Upload the image showing the physical locking process via keypad here:*  
+
+![Keypad Locking Process](UPLOAD_IMAGE_LINK_HERE)  
