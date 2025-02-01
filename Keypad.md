@@ -172,5 +172,5 @@ if (currentPasswordLength == 4) {
 
 for easier explanation of password Evaluation and Verification, it will use the picture below to show the whooloe LCD updates during the keypad authentication process:
 
-![Full LCD display process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/457c78315f53fe405cb2db72a8e64f07c065ac6c/assets/keypad.jpg)  
+![Full LCD display process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/56790733250a6e5f43e3dc5d8b46a60331fbae0f/assets/keypad.jpg)  
 
