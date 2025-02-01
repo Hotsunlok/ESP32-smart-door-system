@@ -303,7 +303,7 @@ For testing, the **incorrect password entered is `6789`**.
 - **Access log displays** `"4. Wrong access (by keypad)."`  
 
 📸 **Web Interface - Wrong Access (Keypad)**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8cd2cedd8b1dff7c2afb2c8e438a51838b77f292/assets/%E5%9C%96%E7%89%8716.jpg)  
 
 ---
 
