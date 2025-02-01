@@ -194,9 +194,11 @@ If the password **matches** the pre-set code (`"1234"`), the following actions o
 
 ---
 
-## 📷 Physical Response to Correct Keypad Password  
+## 📷 Physical Response to Correct Keypad Password (UNLOCKING)  
 
 *Upload the image showing the physical unlocking process via keypad here:*  
 
-![Keypad Unlocking Process](UPLOAD_IMAGE_LINK_HERE)  
+![Keypad Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9bb0c271f22709f6961a770f23153990ad20814c/assets/keypadunlockingprocess.jpg)  
 
+## 📸 **Web Interface Once Door Is Unlocked By keypad**
+![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0e0dab94c976831b02e35dfbb840987ec78d1af7/%E5%9C%96%E7%89%875.jpg)
