@@ -272,4 +272,4 @@ If the user **does not interact** within **10 seconds**:
 ---
 
 📸 **Overall Physical System - Auto-Lock Timer (Keypad)**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b0b3f0bdf816540ba046bf7ca5affeb42d4b5286/assets/webkeypadautotimelock.jpg)  
