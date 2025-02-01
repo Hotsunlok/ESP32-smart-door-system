@@ -267,7 +267,7 @@ For testing, the **blue key fob tag** is used as an incorrect RFID card.
 - **Access log displays** `"4. Wrong access (by RFID)."`  
 
 📸 **Web Interface - Wrong Access (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/845b13c719bc10dbf57fd7d6ff14c1b018e0008e/assets/web%20interface%20screenshot%20when%20wrong%20access.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/cdb719be6d55e428fa7dc50f17d0a2bdb8b31a0b/assets/webRFIDwrongaccess.jpg)
 
 ---
 
