@@ -264,7 +264,8 @@ If the user **scans the wrong fingerprint**, the system **denies access** and th
 For testing, the **left index finger** is used as an incorrect fingerprint.  
 
 📸 **Wrong Fingerprint Used (Left Index Finger)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/wrong_fingerprint.jpg)
+
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/f00ea4e3371283430fb09737309b0e6306e7612d/assets/wrong%20finger.jpg)
 
 - **LCD displays** `"Thinking..."` while scanning.  
 - **LCD updates** to `"Wrong Access"`.  
