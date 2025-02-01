@@ -288,4 +288,4 @@ For testing, the **left index finger** is used as an incorrect fingerprint.
 - The system **remains in a locked state** until correct access is granted.  
 ---
 📸 **Overall Physical System - Wrong Fingerprint**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/overall_wrong_fingerprint.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/fb43a1f2404ff4d31d3742d0b0764f983c638c7c/assets/fingerprintvertfity.jpg)
