@@ -12,3 +12,16 @@ It detects the **user's RFID card** and checks if the **card ID matches an autho
 
 ## 🛒 **Purchase Link**  
 [Upload Amazon Purchase Link Here](https://www.amazon.co.uk/AZDelivery-RFID-RC522-Reader-Parent/dp/B01M28JAAZ?th=1)
+
+---
+## 🔌 **Pin Configuration Table**
+| **RC522 Pin** | **ESP32 Pin** |
+|--------------|--------------|
+| **SDA**      | GPIO 4       |
+| **SCK**      | GPIO 15 (in series with 10K pull-up resistors) |
+| **MOSI**     | GPIO 2 (in series with 10K pull-down resistors) |
+| **MISO**     | GPIO 35      |
+| **IRQ**      | N/A (**DO NOT CONNECT**) |
+| **3.3V**     | 3.3V         |
+| **GND**      | GND          |
+| **RST**      | GPIO 34      |
