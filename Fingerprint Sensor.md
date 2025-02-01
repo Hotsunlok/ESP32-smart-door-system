@@ -222,7 +222,7 @@ Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **
 ---
 # ⏳ **THIRD CASE: Auto-Lock Timer - Fingerprint Access**
 
-If the user **unlocks the door with the correct fingerprint** but **does not attach any card** within **10 seconds**, the **auto-lock timer** activates.
+If the user **unlocks the door with the correct fingerprint** but **does not attach any fingerprint** within **10 seconds**, the **auto-lock timer** activates.
 
 ### **🟢 Step 1: Unlocking (Fingerprint)**
 The user scans the **correct fingerprint**, unlocking the door.  
