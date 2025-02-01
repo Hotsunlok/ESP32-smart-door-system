@@ -218,3 +218,40 @@ Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **
 
 ## 📸 **Web Interface Once Door Is locked By Fingerprint**
 ![web interface once door is locked by fingerprint](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c9faa05169b3634ed50eea140485e1a3ce257b5e/%E5%9C%96%E7%89%876.jpg)
+
+---
+# ⏳ **THIRD CASE: Auto-Lock Timer - Fingerprint Access**
+
+If the user **unlocks the door with the correct fingerprint** but **does not attach any card** within **10 seconds**, the **auto-lock timer** activates.
+
+### **🟢 Step 1: Unlocking (Fingerprint)**
+The user scans the **correct fingerprint**, unlocking the door.  
+- **LCD displays** `"Unlocked"`.  
+- **Toggle switch slides** from **red (left) to green (right)**.  
+- **Access log updates** to `"2. The door is unlocked (by fingerprint)."`.  
+
+📸 **Web Interface - Timer Countdown (Fingerprint)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/timer_countdown_fingerprint.jpg)
+
+---
+
+### **🔴 Step 2: Auto-Lock Activated (No Action for 10s)**
+If the user **does not interact** within **10 seconds**:
+- **LCD updates** to `"Locked"`.  
+- **Toggle switch slides back** from **green (right) to red (left)**.  
+- **Timer resets to `00:10` on the web interface**.  
+- **Access log updates** to `"3. The door is locked (by auto-lock)."`  
+- **Buzzer beeps once**.  
+- **Servo motor rotates to `110°`**, pushing the **sliding bolt lock into the locked position**.  
+
+📸 **Web Interface - Auto-Lock Timer Triggered (Fingerprint)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/web_interface_autolock_fingerprint.jpg)
+
+---
+
+### **🔄 Step 3: System Resets for Next User**
+- **LCD loops back** to `"Welcome Password"`, allowing new user input.  
+- The system is **ready for unlocking again**.
+
+📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/auto_lock_timer_fingerprint.jpg)
