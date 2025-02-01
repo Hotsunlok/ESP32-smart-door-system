@@ -11,4 +11,4 @@ It detects the **user's RFID card** and checks if the **card ID matches an autho
 ---
 
 ## 🛒 **Purchase Link**  
-[Upload Amazon Purchase Link Here](https://www.amazon.co.uk/RC522-RFID-Reader-Module-Arduino/dp/B07Y38BL6X)
+[Upload Amazon Purchase Link Here](https://www.amazon.co.uk/AZDelivery-RFID-RC522-Reader-Parent/dp/B01M28JAAZ?th=1)
