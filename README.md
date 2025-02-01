@@ -23,7 +23,7 @@ This system consists of two main sections:
 ---
 
 ### **🔑 Authentication Methods** (Inputs)
-- 🔢 [Keypad](docs/Keypad.md)  
+- 🔢 [Keypad](Keypad.md)  
 - 📡 [RFID Card System RC522](RFID%20Card.md)  
 - 🏷️ [Fingerprint Sensor R307](Fingerprint%20Sensor.md)  
 - 🎛️ [Web Server Toggle Button (Manual)](Web%20Server%20Toggle%20Button%20%28Manual%29.md)   
