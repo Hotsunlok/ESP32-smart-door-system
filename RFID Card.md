@@ -216,7 +216,7 @@ The user scans the **correct card**, unlocking the door.
 - **Access log updates** to `"2. The door is unlocked (by RFID)."`.  
 
 📸 **Web Interface - Timer Countdown (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b56f92ee33cafaf35066a3f4413a2bbeb1e1249d/assets/fingerprintautotimelockerflow.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c4c5c3681dbe5e51f70b041e2e7cd2cc73a36ac9/assets/autolockwebflowRFID.jpg)
 
 ---
 
