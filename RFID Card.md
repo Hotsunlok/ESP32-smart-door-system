@@ -155,3 +155,27 @@ if (rfid.uid.uidByte[0] == 0x33 && rfid.uid.uidByte[1] == 0x82 &&
 ---
 ## 📸 **RFID Sensor Process Flow**  
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/319e93fcd72172a0480d0ba39cbf7445e095b930/assets/RFIDFLOW.jpg)
+
+---
+## 🔐 FIRST CASE: Correct RFID Access - Unlocking the Door  
+
+Once the code is updated, the **LCD** will display `"Welcome Password"`, ensuring the system starts in a locked state.  
+At this point, the **servo motor** immediately rotates to **110°**, pushing the **sliding bolt lock into the locked position**.  
+
+When the user **taps the correct RFID card** (e.g., pre-authorized white card) on the **RFID sensor**, the **RFID reader detects and verifies it**.  
+During verification, the **LCD updates** to `"Scanning..."` while processing.  
+
+If the **RFID card matches** the pre-authorized ID, the **LCD updates** to `"Unlocked"`, and the **buzzer beeps once** as feedback.  
+Simultaneously, the **servo motor rotates to 50°**, pulling the **sliding bolt into the unlocked position**.  
+
+On the **web interface**, the **toggle switch** automatically moves from **red (locked) to green (unlocked)**.  
+The **access log** updates from `"1. The door is locked."` to **"2. The door is unlocked (by RFID)."**
+
+---
+
+
+## 📸 **Physical Response to Correct RFID CARD (Unlocking)**
+![Correct Card Unlocking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9f87a8567844dc6ff86a650c2945fd9a3ac28699/fingerprintunlock.jpg)
+
+## 📸 **Web Interface Once Door Is Unlocked By Correct RFID CARD**
+![web interface once door is unlocked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0e0dab94c976831b02e35dfbb840987ec78d1af7/%E5%9C%96%E7%89%875.jpg)
