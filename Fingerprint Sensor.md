@@ -231,7 +231,7 @@ The user scans the **correct fingerprint**, unlocking the door.
 - **Access log updates** to `"2. The door is unlocked (by fingerprint)."`.  
 
 📸 **Web Interface - Timer Countdown (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/timer_countdown_fingerprint.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b56f92ee33cafaf35066a3f4413a2bbeb1e1249d/assets/fingerprintautotimelockerflow.jpg)
 
 ---
 
