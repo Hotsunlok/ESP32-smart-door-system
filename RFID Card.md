@@ -251,7 +251,7 @@ For testing, the **blue key fob tag** is used as an incorrect RFID card.
 
 🛑 **Wrong RFID Card Used (Blue Key Fob Tag)**  
 
-![Wrong RFID Card](UPLOAD_IMAGE_LINK_HERE)  
+![Wrong RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b07b30ca79d0b5f57a8ea28d5f4e933cf764a107/assets/wrongbluecard.jpg)  
 
 - **LCD displays** `"Thinking..."` while processing.  
 - **LCD updates** to `"Wrong Access"`.  
@@ -259,3 +259,21 @@ For testing, the **blue key fob tag** is used as an incorrect RFID card.
 - **Servo motor remains unchanged** (door stays locked).  
 - **Toggle switch remains in red** (left).  
 - **Access log updates** to **"4. Wrong access (by RFID)."**  
+
+---
+
+### **🌐 Step 2: Web Interface Response**
+- **Toggle switch does not move** (remains **red/locked**).  
+- **Access log displays** `"4. Wrong access (by RFID)."`  
+
+📸 **Web Interface - Wrong Access (Fingerprint)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/845b13c719bc10dbf57fd7d6ff14c1b018e0008e/assets/web%20interface%20screenshot%20when%20wrong%20access.jpg)
+
+---
+
+### **🔄 Step 3: System Resets for Next User**
+- **LCD loops back** to `"Welcome Password"`, allowing the next attempt.  
+- The system **remains in a locked state** until correct access is granted.  
+---
+📸 **Overall Physical System - Wrong RFID Card**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/fb43a1f2404ff4d31d3742d0b0764f983c638c7c/assets/fingerprintvertfity.jpg)
