@@ -230,7 +230,7 @@ If the user **does not interact** within **10 seconds**:
 - **Servo motor rotates to `110°`**, pushing the **sliding bolt lock into the locked position**.  
 
 📸 **Web Interface - Auto-Lock Timer Triggered (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/180107e92f8a24ff64df82d0024dc2e76146cbf6/assets/autolockfingerprintweb.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/23afc247b84781fd2dc948b0ce16bc49ca0dedbd/assets/RFIDwebautolock.jpg)
 
 ---
 
