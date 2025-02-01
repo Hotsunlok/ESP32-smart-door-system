@@ -199,7 +199,7 @@ Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **
 ---
 
 ## 📸 **Physical Response to Correct RFID CARD (Locking)**
-![Correct Card Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/45d194f3b23fc98f2ec4366ba496926e302eef31/fingerprintlock.jpg)
+![Correct Card Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1ba0efb921396740fb1ff246696d271c78624111/assets/rfidlock.jpg)
 
 ## 📸 **Web Interface Once Door Is locked By Correct RFID CARD**
 ![web interface once door is locked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c9faa05169b3634ed50eea140485e1a3ce257b5e/%E5%9C%96%E7%89%876.jpg)
