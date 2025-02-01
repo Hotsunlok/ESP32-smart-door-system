@@ -154,4 +154,4 @@ if (rfid.uid.uidByte[0] == 0x33 && rfid.uid.uidByte[1] == 0x82 &&
   - **Buzzer beeps twice** to indicate access denial.
 ---
 ## 📸 **RFID Sensor Process Flow**  
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0f91b7d94d00498f622182e936073ebd2f8c9e20/assets/%E5%9C%96%E7%89%874.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/319e93fcd72172a0480d0ba39cbf7445e095b930/assets/RFIDFLOW.jpg)
