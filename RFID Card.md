@@ -276,4 +276,4 @@ For testing, the **blue key fob tag** is used as an incorrect RFID card.
 - The system **remains in a locked state** until correct access is granted.  
 ---
 📸 **Overall Physical System - Wrong RFID Card**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/fb43a1f2404ff4d31d3742d0b0764f983c638c7c/assets/fingerprintvertfity.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/4c774e91df193ed92fac76f9fde79620b7cd2c33/assets/wrongaccessflowRFID.jpg)
