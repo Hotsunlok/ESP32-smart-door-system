@@ -229,4 +229,47 @@ After the user successfully unlocks the door, they can use the **keypad** to **l
 ![Keypad Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2eaa9485b30900dd44a8d8b3b8105d2d3c7c1a5e/assets/keypadlockingprocess.jpg)  
 
 ## 📸 **Web Interface Once Door Is locked By keypad**
-![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3751f2d17c6c4c0995f8a499e9911d61b202aeff/assets/webinterfacekeypad.jpg)
+![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/0d164d36a0aa056e9b34758aaa44af6972245cf0/assets/%E5%9C%96%E7%89%8714.jpg)
+---
+# ⏳ THIRD CASE: Auto-Lock Timer with Keypad  
+
+If the user **unlocks the door with the correct keypad password** but **does not enter any further input** within **10 seconds**, the **auto-lock timer** activates.  
+
+---
+
+## **🟢 Step 1: Unlocking (Keypad)**  
+
+The user enters the **correct 4-digit password** via the keypad, unlocking the door.  
+- **LCD displays** `"Unlocked"`.  
+- **Toggle switch slides** from **red (left) to green (right)**.  
+- **Access log updates** to `"2. The door is unlocked (by keypad)."`.  
+
+📸 **Web Interface - Timer Countdown (Keypad)**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+
+---
+
+## **🔴 Step 2: Auto-Lock Activated (No Action for 10s)**  
+
+If the user **does not interact** within **10 seconds**:  
+- **LCD updates** to `"Locked"`.  
+- **Toggle switch slides back** from **green (right) to red (left)**.  
+- **Timer resets to `00:10` on the web interface**.  
+- **Access log updates** to `"3. The door is locked (by auto-lock)."`  
+- **Buzzer beeps once**.  
+- **Servo motor rotates to `110°`**, pushing the **sliding bolt lock into the locked position**.  
+
+📸 **Web Interface - Auto-Lock Timer Triggered (Keypad)**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+
+---
+
+## **🔄 Step 3: System Resets for Next User**  
+
+- **LCD loops back** to `"Welcome Password"`, allowing new user input.  
+- The system is **ready for unlocking again**.  
+
+---
+
+📸 **Overall Physical System - Auto-Lock Timer (Keypad)**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
