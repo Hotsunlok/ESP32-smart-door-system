@@ -256,7 +256,7 @@ If the user **does not interact** within **10 seconds**:
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e2bf2726cb5d5f1871f176630309d05b8a05f366/assets/overallfingerautolocktimer.jpg)
 ---
-# ❌ **Fingerprint: Incorrect Password Access**
+# ❌ **CASE 4: Incorrect Password Access**
 
 If the user **scans the wrong fingerprint**, the system **denies access** and the door remains **locked**.
 
