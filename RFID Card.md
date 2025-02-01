@@ -192,7 +192,7 @@ Immediately, the **servo motor rotates back to 110°**, pushing the **sliding bo
 The **buzzer beeps once** as confirmation.  
 
 On the **web interface**, the **toggle switch** automatically moves from **green (unlocked) to red (locked)**.  
-The **access log** updates from `"2. The door is unlocked (by RFID)."` to **"3. The door is locked (by RFID)."**  
+The **access log** updates from `"2. The door is unlocked (by RFID)."` to `"3. The door is locked (by RFID)."`  
 
 Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **enter their access method again**.  
 
@@ -202,4 +202,4 @@ Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **
 ![Correct Card Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1ba0efb921396740fb1ff246696d271c78624111/assets/rfidlock.jpg)
 
 ## 📸 **Web Interface Once Door Is locked By Correct RFID CARD**
-![web interface once door is locked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c9faa05169b3634ed50eea140485e1a3ce257b5e/%E5%9C%96%E7%89%876.jpg)
+![web interface once door is locked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/9d8b723472cbda1b3dcb99c4d1badbcdff9d4754/assets/webrfidlock.jpg)
