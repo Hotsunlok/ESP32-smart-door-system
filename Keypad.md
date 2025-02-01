@@ -172,5 +172,31 @@ if (currentPasswordLength == 4) {
 
 for easier explanation of password Evaluation and Verification, it will use the picture below to show the whooloe LCD updates during the keypad authentication process:
 
-![Full LCD display process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/56790733250a6e5f43e3dc5d8b46a60331fbae0f/assets/keypad.jpg)  
+![Full LCD display process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/7a83b11a52cd67dd14948c10687e9617a8d39927/assets/keypadlcd1234.jpg)  
+
+---
+
+# 🔢 FIRST CASE: Correct Keypad Access - Unlocking the Door  
+
+Once the **correct 4-digit password** is entered via the keypad, the system **verifies** the input.  
+If the password **matches** the pre-set code (`"1234"`), the following actions occur:  
+
+## 📟 LCD & Physical Response  
+
+- The **LCD updates** to `"Unlocked"`, confirming successful access.  
+- The **servo motor rotates to 50°**, pulling the **sliding bolt into the unlocked position**.  
+- The **buzzer beeps once** as feedback.  
+
+## 🌐 Web Interface Update  
+
+- The **toggle switch** automatically moves from **red (locked) to green (unlocked)**.  
+- The **access log updates** from `"1. The door is locked."` to `"2. The door is unlocked (by keypad)."`  
+
+---
+
+## 📷 Physical Response to Correct Keypad Password  
+
+*Upload the image showing the physical unlocking process via keypad here:*  
+
+![Keypad Unlocking Process](UPLOAD_IMAGE_LINK_HERE)  
 
