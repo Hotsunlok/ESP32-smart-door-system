@@ -286,7 +286,7 @@ If the user **enters an incorrect password via the keypad**, the system **denies
 For testing, the **incorrect password entered is `6789`**.  
 
 📸 **Wrong Password Entered (Keypad: 6789)**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/66bc3459f7a915d81d3a0deba3d0e0c6d26e1d9a/assets/keypad6789.jpg)  
 
 - **LCD displays** `"Thinking..."` while verifying.  
 - **LCD updates** to `"Wrong Access"`.  
