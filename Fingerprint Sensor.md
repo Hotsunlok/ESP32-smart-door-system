@@ -245,13 +245,13 @@ If the user **does not interact** within **10 seconds**:
 - **Servo motor rotates to `110°`**, pushing the **sliding bolt lock into the locked position**.  
 
 📸 **Web Interface - Auto-Lock Timer Triggered (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/web_interface_autolock_fingerprint.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/180107e92f8a24ff64df82d0024dc2e76146cbf6/assets/autolockfingerprintweb.jpg)
 
 ---
 
 ### **🔄 Step 3: System Resets for Next User**
 - **LCD loops back** to `"Welcome Password"`, allowing new user input.  
 - The system is **ready for unlocking again**.
-
+---
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/auto_lock_timer_fingerprint.jpg)
