@@ -245,7 +245,7 @@ The user enters the **correct 4-digit password** via the keypad, unlocking the d
 - **Access log updates** to `"2. The door is unlocked (by keypad)."`.  
 
 📸 **Web Interface - Timer Countdown (Keypad)**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b4a50721a8eee801bf4310a0a3366808f181e9d3/assets/keypadautotimelockflow.jpg)  
 
 ---
 
