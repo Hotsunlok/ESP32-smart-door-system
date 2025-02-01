@@ -50,3 +50,26 @@ Before testing, **ensure that your RFID card is successfully registered**.
 ✅ **If enrollment is not completed**, the system **CANNOT verify any card**, and access will be denied.  
 
 ⚠️ SO PLEASE WATCH THE ABOVE LINK to finish enrollment step first !!!
+---
+
+# 🆔 **Card Enrollment - Pre-Authorized ID (RFID)**
+
+The **pre-authorized ID** is set to **4 bytes**, with each byte containing a specific number.  
+This **unique ID** ensures that **only the enrolled card** can unlock or lock the door.
+
+⚠️ THIS IS MY PRE-AUTHORIZED ID , PLEASE DO NOT COPY!!!
+
+---
+
+## 📖 **Pre-Authorized ID Table**
+| **Byte**  | **Value (Hex)** |
+|-----------|----------------|
+| **Byte 0** | `0x33` |
+| **Byte 1** | `0x82` |
+| **Byte 2** | `0xDA` |
+| **Byte 3** | `0x11` |
+
+---
+
+📸 **Correct RFID Card for Unlocking/Locking**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/correct_white_card.jpg)
