@@ -254,4 +254,4 @@ If the user **does not interact** within **10 seconds**:
 - The system is **ready for unlocking again**.
 ---
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/auto_lock_timer_fingerprint.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e2bf2726cb5d5f1871f176630309d05b8a05f366/assets/overallfingerautolocktimer.jpg)
