@@ -280,7 +280,7 @@ For testing, the **left index finger** is used as an incorrect fingerprint.
 - **Access log displays** `"4. Wrong access (by fingerprint)."`  
 
 📸 **Web Interface - Wrong Access (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/web_wrong_access_fingerprint.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/845b13c719bc10dbf57fd7d6ff14c1b018e0008e/assets/web%20interface%20screenshot%20when%20wrong%20access.jpg)
 
 ---
 
