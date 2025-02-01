@@ -255,3 +255,37 @@ If the user **does not interact** within **10 seconds**:
 ---
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e2bf2726cb5d5f1871f176630309d05b8a05f366/assets/overallfingerautolocktimer.jpg)
+---
+# ❌ **Fingerprint: Incorrect Password Access**
+
+If the user **scans the wrong fingerprint**, the system **denies access** and the door remains **locked**.
+
+### **🛑 Step 1: Attempting Access with Wrong Fingerprint**
+For testing, the **left index finger** is used as an incorrect fingerprint.  
+
+📸 **Wrong Fingerprint Used (Left Index Finger)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/wrong_fingerprint.jpg)
+
+- **LCD displays** `"Thinking..."` while scanning.  
+- **LCD updates** to `"Wrong Access"`.  
+- **Buzzer beeps twice** to indicate failed access.  
+- **Servo motor remains unchanged** (door stays locked).  
+- **Toggle switch remains in red (left)**.  
+- **Access log updates** to `"4. Wrong access (by fingerprint)."`  
+---
+
+### **🌐 Step 2: Web Interface Response**
+- **Toggle switch does not move** (remains **red/locked**).  
+- **Access log displays** `"4. Wrong access (by fingerprint)."`  
+
+📸 **Web Interface - Wrong Access (Fingerprint)**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/web_wrong_access_fingerprint.jpg)
+
+---
+
+### **🔄 Step 3: System Resets for Next User**
+- **LCD loops back** to `"Welcome Password"`, allowing the next attempt.  
+- The system **remains in a locked state** until correct access is granted.  
+---
+📸 **Overall Physical System - Wrong Fingerprint**
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/main/assets/overall_wrong_fingerprint.jpg)
