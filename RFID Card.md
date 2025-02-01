@@ -239,5 +239,23 @@ If the user **does not interact** within **10 seconds**:
 - The system is **ready for unlocking again**.
 ---
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
-![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e2bf2726cb5d5f1871f176630309d05b8a05f366/assets/overallfingerautolocktimer.jpg)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8a6c59872ee20ce05f3779cacfe7a6b4d0f2d9f7/assets/RFIDautolocktflow.jpg)
 ---
+## ❌ RFID: Incorrect Card Access  
+
+If the user **taps an unregistered RFID card**, the system **denies access** and the **door remains locked**.  
+
+### 🔴 Step 1: Attempting Access with Wrong RFID Card  
+
+For testing, the **blue key fob tag** is used as an incorrect RFID card.  
+
+🛑 **Wrong RFID Card Used (Blue Key Fob Tag)**  
+
+![Wrong RFID Card](UPLOAD_IMAGE_LINK_HERE)  
+
+- **LCD displays** `"Thinking..."` while processing.  
+- **LCD updates** to `"Wrong Access"`.  
+- **Buzzer beeps twice** to indicate failed access.  
+- **Servo motor remains unchanged** (door stays locked).  
+- **Toggle switch remains in red** (left).  
+- **Access log updates** to **"4. Wrong access (by RFID)."**  
