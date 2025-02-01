@@ -315,5 +315,5 @@ For testing, the **incorrect password entered is `6789`**.
 ---
 
 📸 **Overall Physical System - Wrong Password Entry**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d16779b39329395d21f6ddcc027c1f74a08f9ba1/assets/overallkrypadwrongaccess.jpg)  
 
