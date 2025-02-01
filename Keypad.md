@@ -226,4 +226,7 @@ After the user successfully unlocks the door, they can use the **keypad** to **l
 
 *Upload the image showing the physical locking process via keypad here:*  
 
-![Keypad Locking Process](UPLOAD_IMAGE_LINK_HERE)  
+![Keypad Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2eaa9485b30900dd44a8d8b3b8105d2d3c7c1a5e/assets/keypadlockingprocess.jpg)  
+
+## 📸 **Web Interface Once Door Is locked By keypad**
+![web interface once door is unlocked by keypad](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3751f2d17c6c4c0995f8a499e9911d61b202aeff/assets/webinterfacekeypad.jpg)
