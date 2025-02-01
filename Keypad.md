@@ -273,3 +273,47 @@ If the user **does not interact** within **10 seconds**:
 
 📸 **Overall Physical System - Auto-Lock Timer (Keypad)**  
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/b0b3f0bdf816540ba046bf7ca5affeb42d4b5286/assets/webkeypadautotimelock.jpg)  
+
+---
+# ❌ **CASE 4: Incorrect Password Access**  
+
+If the user **enters an incorrect password via the keypad**, the system **denies access** and the door remains **locked**.  
+
+---
+
+## **🛑 Step 1: Attempting Access with Wrong Password**  
+
+For testing, the **incorrect password entered is `6789`**.  
+
+📸 **Wrong Password Entered (Keypad: 6789)**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+
+- **LCD displays** `"Thinking..."` while verifying.  
+- **LCD updates** to `"Wrong Access"`.  
+- **Buzzer beeps twice** to indicate failed access.  
+- **Servo motor remains unchanged** (door stays locked).  
+- **Toggle switch remains in red (left)**.  
+- **Access log updates** to `"4. Wrong access (by keypad)."`  
+
+---
+
+## **🌐 Step 2: Web Interface Response**  
+
+- **Toggle switch does not move** (remains **red/locked**).  
+- **Access log displays** `"4. Wrong access (by keypad)."`  
+
+📸 **Web Interface - Wrong Access (Keypad)**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+
+---
+
+## **🔄 Step 3: System Resets for Next User**  
+
+- **LCD loops back** to `"Welcome Password"`, allowing the next attempt.  
+- The system **remains in a locked state** until the correct password is entered.  
+
+---
+
+📸 **Overall Physical System - Wrong Password Entry**  
+![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+
