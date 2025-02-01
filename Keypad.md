@@ -260,7 +260,7 @@ If the user **does not interact** within **10 seconds**:
 - **Servo motor rotates to `110°`**, pushing the **sliding bolt lock into the locked position**.  
 
 📸 **Web Interface - Auto-Lock Timer Triggered (Keypad)**  
-![Upload Image Here](UPLOAD_IMAGE_LINK_HERE)  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e5b3f5fb96ef568fd7f852f7fa8ea53158b1e2b8/assets/%E5%9C%96%E7%89%8715.jpg)  
 
 ---
 
