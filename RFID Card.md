@@ -163,7 +163,7 @@ Once the code is updated, the **LCD** will display `"Welcome Password"`, ensurin
 At this point, the **servo motor** immediately rotates to **110°**, pushing the **sliding bolt lock into the locked position**.  
 
 When the user **taps the correct RFID card** (e.g., pre-authorized white card) on the **RFID sensor**, the **RFID reader detects and verifies it**.  
-During verification, the **LCD updates** to `"Scanning..."` while processing.  
+During verification, the **LCD updates** to `"Thinking..."` while processing.  
 
 If the **RFID card matches** the pre-authorized ID, the **LCD updates** to `"Unlocked"`, and the **buzzer beeps once** as feedback.  
 Simultaneously, the **servo motor rotates to 50°**, pulling the **sliding bolt into the unlocked position**.  
@@ -179,3 +179,27 @@ The **access log** updates from `"1. The door is locked."` to **"2. The door is 
 
 ## 📸 **Web Interface Once Door Is Unlocked By Correct RFID CARD**
 ![web interface once door is unlocked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/401d8d9a35c0648f07a33bc2fd6a1c4908694f3f/assets/webRFIDUNLOCK.jpg)
+
+---
+
+## 🔐 SECOND CASE: Correct RFID Access - Locking the Door  
+
+After the user successfully unlocks the door, they can use their **RFID card** to **lock the door again**.  
+
+When the **correct RFID card** is tapped on the **RFID sensor**, the **LCD updates** to `"Locked"`, as shown below.  
+Immediately, the **servo motor rotates back to 110°**, pushing the **sliding bolt into the locked position**.  
+
+The **buzzer beeps once** as confirmation.  
+
+On the **web interface**, the **toggle switch** automatically moves from **green (unlocked) to red (locked)**.  
+The **access log** updates from `"2. The door is unlocked (by RFID)."` to **"3. The door is locked (by RFID)."**  
+
+Finally, the **LCD loops back** to `"Welcome Password"`, allowing the user to **enter their access method again**.  
+
+---
+
+## 📸 **Physical Response to Correct RFID CARD (Locking)**
+![Correct Card Locking Process](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/45d194f3b23fc98f2ec4366ba496926e302eef31/fingerprintlock.jpg)
+
+## 📸 **Web Interface Once Door Is locked By Correct RFID CARD**
+![web interface once door is locked by Correct RFID Card](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c9faa05169b3634ed50eea140485e1a3ce257b5e/%E5%9C%96%E7%89%876.jpg)
