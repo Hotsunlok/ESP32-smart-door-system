@@ -51,3 +51,33 @@ It covers all the necessary steps to implement Face Recognition and Identificati
 5️⃣ **Programming Arduino** 💻 – Integrating with ESP32 for smart door control  
 
 ⚡ **Make sure to follow all steps in the video carefully to ensure proper setup!**
+
+---
+
+## Step 1️⃣: Access to Webcam 🎥
+
+In the original tutorial, the author provides a **Python script (AccessTo_webcam.py)** to access the webcam using OpenCV.  
+However, if you haven't installed **OpenCV**, you'll need to set it up first.  
+
+### 🖥️ Using Visual Studio Code  
+I assume you are using **Visual Studio Code** to run the Python script.  
+Before proceeding, make sure you have **Visual Studio Code installed**.  
+
+🔗 **Download Visual Studio Code here:**  
+[📥 Click to Download](https://code.visualstudio.com/)
+
+---
+
+### ⚠️ Important: Installing OpenCV  
+The tutorial on the original website **may not be the best** guide for installing OpenCV.  
+I encountered **many mistakes and issues** while following it.  
+
+👉 **Instead, I highly recommend watching this YouTube video** before installing OpenCV:  
+
+📺 **[How To Install OpenCV Python in Visual Studio Code (Windows 11)](https://www.youtube.com/watch?v=fclTFQQvQFQ)**  
+
+Make sure to **follow the video carefully** to avoid common installation errors.  
+
+---
+
+After **installing OpenCV properly**, you can download and run the **AccessTo_webcam.py** script from the original tutorial.
