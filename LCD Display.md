@@ -236,6 +236,6 @@ lcd.print("Locked");
 ---
 
 ## 📷 Case 1 and Case 2 can use the picture below to conclude the LCD flow after user slide the toggle switch in website
-![LCD flow after user slide the toggle switch in website](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/125f47a0a70d90f17ac7ea504e07ffb8ddfa81d8/assets/LCDtoggleswitchUnlock.jpg)
+![LCD flow after user slide the toggle switch in website](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/dede971f64ef026a8965cf4c8c01d63aabe1b1a4/assets/LCDTOGGLWSIWTCH.jpg)
 
 ---
