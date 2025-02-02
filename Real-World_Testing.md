@@ -126,4 +126,4 @@ The **Smart Door System** was successfully operated by **switching multiple meth
 These methods effectively controlled the **locking and unlocking** of the door. The **servo motor** responded **immediately**, performing the **locking or unlocking actions** without any delay. Additionally, the **auto-lock timer** was **actively counting down** right after the door was unlocked, ensuring automatic security measures were in place.
 
 📸 **Overall Physical System - Summary of Steps 1 to 4**  
-![Upload Image Here](Your-Image-Link-Here)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/5cd559f0d0f637a0d255c8586bd5cb3bb8f00db6/assets/step1-4.jpg)
