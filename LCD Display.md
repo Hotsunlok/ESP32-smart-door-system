@@ -86,11 +86,11 @@ void controlDoor(bool lock, String method) {
 }
  ```
 ---
-# 📷 Two Pathways of LCD Display
+## 📷 Two Pathways of LCD Display
 ![Two pathway of LCD display flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d557a7eb30742a3f3f11188b1977dfbb06495a51/assets/LCDFLOWCHART.jpg)  
 
 ---
-## 🔄 LCD Display Behavior Across Unlocking Methods  
+# 🔄 LCD Display Behavior Across Unlocking Methods  
 
 Since we have already discussed how **Fingerprint, Keypad, RFID, and Face ID** trigger the LCD updates, you can read the detailed behavior in their respective sections:  
 
@@ -112,5 +112,24 @@ Unlike **RFID, Fingerprint, and Face ID**, which **immediately** display `"Think
    - `"Locked"` if access is denied or auto-lock activates.  
 ✔ The LCD **loops back to "Welcome Password"** in the end.  
 
+---
 # 📷 whole map of LCD feedback flow for correct access
-![whole map of LCD feedback flow for correct access](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d557a7eb30742a3f3f11188b1977dfbb06495a51/assets/LCDFLOWCHART.jpg)  
+![whole map of LCD feedback flow for correct access](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c5e9da32fbd83962cffe2ea3538faa05df3437dd/assets/LCDCORRECTACCESSFLOW.jpg)  
+
+---
+# ⏳ LCD: Auto-Lock Timer  
+
+If the user **does not take any action** to enter a password and lock the door within **10 seconds**, the **LCD automatically updates to** `"Locked"`.
+
+### 📌 **How It Works:**  
+✔ The **LCD reads** `lock = true`, determining that it must display `"Locked"` after **10 seconds of inactivity**.  
+✔ This **ensures users visually know** that the **door is now locked**.  
+✔ The LCD then **loops back** to its initial mode, displaying **"Welcome Password"**, completing the **auto-lock process**.
+
+---
+
+## 📷 LCD Feedback Flow - Auto-Lock Timer  
+
+📸 *Upload an image showing the LCD feedback flow for the auto-lock timer here:*  
+![LCD Auto-Lock Timer Display](UPLOAD_IMAGE_LINK_HERE)  
+
