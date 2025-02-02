@@ -239,7 +239,7 @@ lcd.print("Locked");
 ![LCD flow after user slide the toggle switch in website](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/dede971f64ef026a8965cf4c8c01d63aabe1b1a4/assets/LCDTOGGLWSIWTCH.jpg)
 
 ---
-## ⏳ Case 3: Auto-Lock Timer LCD Response in Web Interface  
+## ✅ Case (3): Auto-Lock Timer LCD Response in Web Interface  
 
 When the **toggle switch slides to the right (green color)**, an **auto-lock timer** begins **counting down from 10 seconds**.  
 
@@ -252,7 +252,5 @@ If the user **does not take any action** within **10 seconds**, the **following 
 
 ---
 
-## 📷 **LCD Flow Map - Auto-Lock Timer (Web Interface)**  
-
-📸 *Upload an image showing the expected LCD flow map when the user does not lock the door manually via the toggle switch after 10 seconds:*  
-![LCD Auto-Lock Web Interface Flow](UPLOAD_IMAGE_LINK_HERE)  
+## 📷 **LCD Flow Map - Auto-Lock Timer (Web Interface)**   
+![LCD Auto-Lock Web Interface Flow](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3aebc73ad77cdef6a50b60ac08b2ea27b85933b3/assets/LCDTOGGLEAUTOLOCKTIMER.jpg)  
