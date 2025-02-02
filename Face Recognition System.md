@@ -65,7 +65,7 @@ It covers all the necessary steps to implement Face Recognition and Identificati
 
 ---
 
-## Step 1️⃣: Access to Webcam 🎥
+# Step 1️⃣: Access to Webcam 🎥
 
 In the original tutorial, the author provides a **Python script (AccessTo_webcam.py)** to access the webcam using OpenCV.  
 However, if you haven't installed **OpenCV**, you'll need to set it up first.  
@@ -141,7 +141,8 @@ video.release()
 # Destroys all the windows which were created
 cv2.destroyAllWindows()
 ```
-## Step 2️⃣: Face Identification 🧐  
+---
+# Step 2️⃣: Face Identification 🧐  
 
 Now that we have access to the webcam, the next step is **face identification**.  
 This step will allow us to **detect faces** in the video stream using OpenCV.  
@@ -224,7 +225,7 @@ Once the system is working, you should see something like this:
 ![face detection screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/74ce4fddbb6f39f0465d4bfc10b80732c3b32ef6/assets/IMG_9750.jpg)
 
 ---
-## Step 3️⃣: Data Collection 📸  
+# Step 3️⃣: Data Collection 📸  
 
 To train the AI model for face recognition, you need to **capture multiple images** of yourself.  
 These images will be used later to **train the system** to recognize your face accurately.  
@@ -260,6 +261,44 @@ These images will be used later to **train the system** to recognize your face a
 ### 🔍 **Check Your Library Manager**
 Once you have stored your images correctly, you should see the folder order in your **file explorer or library manager**.
 
-![Library Manager View](INSERT_IMAGE_LINK_HERE)
+![Library Manager View](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/e69a0a4e4a5d14a8761abc9c6425ca928a8c9974/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20132021.jpg)
 
 ---
+# Step 4️⃣: Training the Face Recognition Model 🤖  
+
+Now that we have collected the image data, it's time to **train the AI model**.  
+This step will go through all the images, detect faces, and generate the necessary files for recognition.  
+
+---
+
+### 📥 **Download Required File**  
+To train the model, download and place the following file in your **OpenCV_PROJECT** folder:  
+
+🔗 **Download face_trainer.py:**  
+![📂 face_trainer.py](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1b6d68efed53896f8232144bc95bd3b8d1db3f2f/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20133129.jpg)  
+
+---
+
+### ▶️ **Running the Training Script**  
+1. Open **Visual Studio Code** and navigate to the **OpenCV_PROJECT** folder.  
+2. Run the `python face_trainer.py` 
+
+---
+### ⏳ **Wait for the Training Process**
+3. **Wait patiently** as the script processes all the images and generates model files.
+
+---
+
+### 📂 **Output Files**  
+After training, the script will create **two new files**:  
+- 🗂 **`labels.pickle`** → Stores face labels and names.  
+- 🗂 **`trainner.yml`** → Contains trained face recognition data.  
+
+---
+
+### 🔍 **Confirm the Output in Your Library Manager**  
+1. Open your **file explorer** or **library manager**.  
+2. Ensure that **`labels.pickle`** and **`trainner.yml`** are inside the **OpenCV_PROJECT** folder.  
+3. If these files are missing, **move them manually** to the correct folder.  
+![two file structure.py](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/466e8febf71d334ec85b77746a48120797010942/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20133404.jpg)  
+   
