@@ -16,3 +16,26 @@ This ensures **smooth performance** and provides a **reliable** access control s
 
 📸 **Overall Sequence Testing - Smart Door System**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/46a39429787227c524423c66d8675fc626f4df13/assets/Overallsequencetesting.jpg)
+
+### 🔢 Step 1: Unlocking with Keypad
+
+Once the code is uploaded, the **Smart Door System** starts in a **locked state**.  
+
+#### 📌 **User Action**
+- The user enters **`1234`** on the **keypad** to unlock the door.
+
+#### 📟 **LCD Response**
+- The **LCD displays** the entered password.  
+- Then, it **updates to** `"Unlocked"` at the end.
+
+#### 🔊 **Other Component Responses**
+- **Buzzer beeps once** to confirm unlocking.  
+- **Servo motor rotates** to **50°**, pulling the door lock **to unlock**.  
+
+#### 🌐 **Web Interface Response**
+- The **toggle switch** button **automatically slides to green (right)**.  
+- The **access log box updates** to: `2. The door is unlocked (by keypad).`
+
+
+📸 **Overall Physical System - Unlocking with Keypad**  
+![Upload Image Here](Your-Image-Link-Here)
