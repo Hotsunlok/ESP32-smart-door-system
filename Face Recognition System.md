@@ -253,7 +253,7 @@ These images will be used later to **train the system** to recognize your face a
 ---
 
 ### 📷 **Example Screenshot of Image Collection**
-![Image Data Collection](INSERT_IMAGE_LINK_HERE)
+![Image Data Collection](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/1b584379699e1a2defc191aa62e0aeabc46b0449/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20131635.jpg)
 
 ---
 
