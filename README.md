@@ -27,7 +27,7 @@ This system consists of two main sections:
 - 📡 [RFID Card System RC522](RFID%20Card.md)  
 - 🏷️ [Fingerprint Sensor R307](Fingerprint%20Sensor.md)  
 - 🎛️ [Web Server Toggle Button (Manual)](Web%20Server%20Toggle%20Button%20%28Manual%29.md)   
-- 🤖 [Face Recognition System](docs/Face_Recognition.md)  
+- 🤖 [Face Recognition System](Face%20Recognition%20System.md)  
   *(PC uses connected camera with Python OpenCV to detect faces and send unlock signals to ESP32.)*  
 
 ---
