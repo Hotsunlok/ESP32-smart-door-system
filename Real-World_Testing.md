@@ -95,7 +95,6 @@ After the door was **locked by RFID**, the user now **uses the fingerprint senso
 
 After the door was **unlocked by the fingerprint sensor**, the user now **uses the web interface toggle switch** to **lock the door**.
 
-This step follows the details in **[4.5.4 Web Interface: Manual Toggle Switch Control](Your-Link-Here)**.
 
 #### 📌 **User Action**
 - The user **manually slides** the **toggle switch button** from **green (right) to red (left)**.
@@ -113,4 +112,18 @@ This step follows the details in **[4.5.4 Web Interface: Manual Toggle Switch Co
 
 
 📸 **Overall Physical System - Locking with Web Interface**  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/97240b1f1a1607231a6f9e9918ce80741b3c1884/assets/step4.jpg)
+
+---
+## 📋 Summary
+
+The **Smart Door System** was successfully operated by **switching multiple methods** such as:
+- **Keypad**
+- **RFID card module**
+- **Fingerprint sensor**
+- **Web interface toggle switch button**
+
+These methods effectively controlled the **locking and unlocking** of the door. The **servo motor** responded **immediately**, performing the **locking or unlocking actions** without any delay. Additionally, the **auto-lock timer** was **actively counting down** right after the door was unlocked, ensuring automatic security measures were in place.
+
+📸 **Overall Physical System - Summary of Steps 1 to 4**  
 ![Upload Image Here](Your-Image-Link-Here)
