@@ -175,3 +175,34 @@ void showError(String method) {
 ![LCD Auto-Lock Timer Display](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a9b164685a0ed9fa315a1bdd8ccdd5d6543cbfe3/assets/LCDWRONGACCESSFLOW.jpg)
 
 ---
+# 🌐 LCD: Web Interface Display  
+
+The LCD reflects the **expected display response** when the **user controls the door via the website toggle switch**.  
+On the website, the **toggle button** allows users to **slide left (lock) or right (unlock)**, sending commands to the ESP32.
+
+---
+
+## ✅ **Case (1): User Unlocks via Web Interface**  
+
+When the user **slides the toggle button to the right**, the following occurs:
+
+1. **Toggle button turns green** (unlocked state).  
+2. **Message `"unlock"` is sent to ESP32**.  
+3. The ESP32 **calls the function**:
+   ```cpp
+   controlDoor(doorLocked, "website");
+   ```
+### 4️⃣ This function **updates** the `doorLocked` variable:
+
+- `doorLocked = true → false` (Locked → Unlocked).  
+- `lock = false`, storing the updated status.  
+
+### 5️⃣ The LCD **reads** `lock = false` and displays:
+
+```cpp
+lcd.print("Unlocked");
+```
+### 6️⃣ Final LCD Display: ` Unlocked ` 
+---
+## 📷 Code Flow: Toggle Switch → LCD Displays "Unlocked"
+![Toggle Switch → LCD Displays "Unlocked"](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a9b164685a0ed9fa315a1bdd8ccdd5d6543cbfe3/assets/LCDWRONGACCESSFLOW.jpg)
