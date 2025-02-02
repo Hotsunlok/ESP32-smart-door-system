@@ -302,3 +302,424 @@ After training, the script will create **two new files**:
 3. If these files are missing, **move them manually** to the correct folder.  
 ![two file structure.py](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/466e8febf71d334ec85b77746a48120797010942/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20133404.jpg)  
    
+### `Face trainer.py` code can also found in here
+```python
+# import the required libraries
+import cv2
+import os
+import numpy as np
+from PIL import Image
+import pickle
+
+
+cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+
+recognise = cv2.face.LBPHFaceRecognizer_create()
+
+# Created a function 
+def getdata():
+
+    current_id = 0
+    label_id = {} #dictionanary
+    face_train = [] # list
+    face_label = [] # list
+    
+    # Finding the path of the base directory i.e path were this file is placed
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    # We have created "image_data" folder that contains the data so basically
+    # we are appending its path to the base path
+    my_face_dir = os.path.join(BASE_DIR,'image_data')
+
+    # Finding all the folders and files inside the "image_data" folder
+    for root, dirs, files in os.walk(my_face_dir):
+        for file in files:
+
+            # Checking if the file has extention ".png" or ".jpg"
+            if file.endswith("png") or file.endswith("jpg"):
+
+                # Adding the path of the file with the base path
+                # so you basically have the path of the image 
+                path = os.path.join(root, file)
+
+                # Taking the name of the folder as label i.e his/her name
+                label = os.path.basename(root).lower()
+
+                # providing label ID as 1 or 2 and so on for different persons
+                if not label in label_id:
+                    label_id[label] = current_id
+                    current_id += 1
+                ID = label_id[label]
+
+                # converting the image into gray scale image
+                # you can also use cv2 library for this action
+                pil_image = Image.open(path).convert("L")
+
+                # converting the image data into numpy array
+                image_array = np.array(pil_image, "uint8")
+        
+                # identifying the faces
+                face = cascade.detectMultiScale(image_array)
+
+                # finding the Region of Interest and appending the data
+                for x,y,w,h in face:
+                    img = image_array[y:y+h, x:x+w]
+                #image_array = cv2.rectangle(image_array,(x,y),(x+w,y+h),(255,255,255),3)
+                    cv2.imshow("Test",img)
+                    cv2.waitKey(1)
+                    face_train.append(img)
+                    face_label.append(ID)
+
+    # string the labels data into a file
+    with open("labels.pickle", 'wb') as f:
+        pickle.dump(label_id, f)
+   
+
+    return face_train,face_label
+
+# creating ".yml" file
+face,ids = getdata()
+recognise.train(face, np.array(ids))
+recognise.save("trainner.yml")
+```
+---
+# Step 5️⃣: Running the Face Recognition Code 🧠  
+
+Now that we have trained the model, it's time to **run the face recognition code**.  
+This script will detect and recognize faces using the trained model.  
+
+---
+
+### 📥 **Download the Face Recognition Code**  
+1. **Download the `face_recognise.py` file** from the website.  
+2. Ensure that it is placed inside the **OpenCV_PROJECT** folder.  
+
+🔗 **Download face_recognise.py:**  
+![📂 face_recognise.py](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3f0d6ff6229d157fe109c9ef261f2e6d130dabed/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20134651.jpg)  
+
+---
+
+### ▶️ **Running the Code**  
+1. Open **Visual Studio Code** and navigate to the **OpenCV_PROJECT** folder.  
+2. Run the `face_recognise.py`
+---
+## 🧠 **What Happens Next?**  
+- 🖥️ **The camera will activate**, and a **real-time video feed** will appear.  
+- 🟡 **A yellow square box** will **detect and track your face**.  
+- 🏷️ **Your name (e.g., "Jacky")** will be displayed in the **top-left corner** of the yellow box.  
+- 🎯 As you move, the **box will follow your face dynamically**.  
+
+---
+
+### 📸 **Screenshot of Face Recognition in Action**  
+Once the system is running, you should see something like this:  
+![ face_recognise screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/c4ce9dd9f7e52e1f10b333bb7c0ec0d99581778f/assets/IMG_0166.jpg) 
+
+---
+
+### ⚠️ **This is Not Yet the Final Version!**  
+- 🗂️ The **`face_recognise.py`** script is a **pre-built version** of the recognition system.  
+- ❌ **This is not the final completed version!**  
+- 🔜 Step **6️⃣** will provide the **full Python recognition code** that integrates with the **ESP32**.  
+---
+
+# Step 6️⃣: Full Face Recognition Code with ESP32 🌐  
+
+Now that you have completed **Step 5**, it's time to upgrade to the **full face recognition code** that integrates with the **ESP32 smart lock system**!  
+
+---
+
+### ⚠️ **Before Using This Code**  
+- 🛑 **Make sure you have successfully completed Step 5** before proceeding.  
+- ✅ Your **face recognition system must be working properly** before using this updated version.  
+- 🚀 This version **adds new features**, including **sending a signal to the ESP32** when a recognized face is detected.  
+
+---
+
+### 📝 **What’s New in This Version?**  
+1. 🌍 **ESP32 Web Communication** – Sends a signal to the ESP32 when your face is recognized.  
+2. ⏳ **Cooldown Mechanism** – Prevents multiple unlock signals from being sent in quick succession.  
+3. 🔄 **Real-time Face Tracking** – Ensures smooth face detection with improved tracking.  
+
+---
+
+### 📜 **Updated Face Recognition Code**  
+If you **could not download the script**, don't worry!  
+The **Python code is shared below** so you can **copy and paste** it into your own script.  
+
+```python
+import cv2
+import pickle
+import time
+import requests
+
+# Global variables
+cooldown_active = False   # Track if the cooldown period is active
+cooldown_duration = 5     # Cooldown period in seconds
+
+# Single toggle endpoint (update if your ESP32 IP or endpoint name is different)
+ESP32_URL_TOGGLE = "http://192.168.4.1/face_toggle"
+
+
+def send_to_esp32(url):
+    """
+    Send an HTTP POST request to the ESP32.
+    """
+    try:
+        response = requests.post(url, timeout=3)  # Add timeout for reliability
+        if response.status_code == 200:
+            print(f"ESP32 Response: {response.text}")
+        else:
+            print(f"ESP32 Error: HTTP {response.status_code}")
+    except Exception as e:
+        print(f"Failed to send request to ESP32: {e}")
+
+
+def face_recognition():
+    """
+    Perform face recognition and send toggle commands to ESP32.
+    """
+    global cooldown_active
+
+    # Initialize camera and face cascade
+    video = cv2.VideoCapture(0)
+    cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+
+    # Load the face recognizer and the trained data
+    recognise = cv2.face.LBPHFaceRecognizer_create()
+    recognise.read("trainner.yml")
+
+    # Load label mappings
+    labels = {}
+    with open("labels.pickle", 'rb') as f:
+        og_label = pickle.load(f)
+        labels = {v: k for k, v in og_label.items()}
+        print("Labels:", labels)
+
+    while True:
+        check, frame = video.read()
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        faces = cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=5)
+
+        for x, y, w, h in faces:
+            face_roi = gray[y:y+h, x:x+w]  # Region of interest
+
+            # Predict the face
+            ID, conf = recognise.predict(face_roi)
+            if 20 <= conf <= 115:
+                print(f"ID: {ID}, Name: {labels[ID]}, Confidence: {conf}")
+                
+                # Draw a rectangle and label around the face
+                cv2.putText(frame, labels[ID], (x-10, y-10),
+                            cv2.FONT_HERSHEY_COMPLEX, 1, (18, 5, 255), 2, cv2.LINE_AA)
+                cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 255), 4)
+
+                # Check cooldown before sending another toggle
+                if cooldown_active:
+                    print("Cooldown active. Skipping detection...")
+                    continue  # Skip if cooldown hasn't finished
+
+                # Toggle the door on the ESP32
+                print("Face recognized. Sending toggle command to ESP32.")
+                send_to_esp32(ESP32_URL_TOGGLE)
+
+                # Start cooldown
+                cooldown_active = True
+                start_cooldown()
+
+        cv2.imshow("Face Recognition", frame)
+        key = cv2.waitKey(1)
+        if key == ord('q'):
+            break
+
+    video.release()
+    cv2.destroyAllWindows()
+
+
+def start_cooldown():
+    """
+    Start a cooldown timer to prevent repeated commands within a short time.
+    """
+    global cooldown_active
+    print("Starting cooldown...")
+    time.sleep(cooldown_duration)
+    cooldown_active = False
+    print("Cooldown ended. Ready to detect again.")
+
+
+if __name__ == "__main__":
+    face_recognition()
+```
+## 💡 **How Does the ESP32 Communication Work?**  
+
+The **face recognition system** is integrated with an **ESP32 smart door lock**. When your face is detected, a signal is sent to the ESP32 to **toggle the door lock**.
+
+---
+
+### 🌍 **Sending a Signal to the ESP32**  
+When a recognized face is detected, the system **sends an HTTP POST request** to the ESP32 using the following command:
+
+```python
+ESP32_URL_TOGGLE = "http://192.168.4.1/face_toggle"
+
+def send_to_esp32(url):
+    """
+    Send an HTTP POST request to the ESP32.
+    """
+    try:
+        response = requests.post(url, timeout=3)  # Timeout for reliability
+        if response.status_code == 200:
+            print(f"ESP32 Response: {response.text}")
+        else:
+            print(f"ESP32 Error: HTTP {response.status_code}")
+    except Exception as e:
+        print(f"Failed to send request to ESP32: {e}")
+```
+### 📌 **Key Explanation:**  
+- 🌍 The **ESP32 runs a web server** at `http://192.168.4.1`, which listens for toggle commands.  
+- 📡 The **`requests.post(url)`** function **sends the unlock signal** when a face is recognized.  
+- ✅ If the **ESP32 responds with HTTP 200**, the command was successful.  
+- ⏳ A **timeout of 3 seconds** ensures the system doesn’t hang if the ESP32 is unreachable.  
+
+---
+
+### ⏳ **Cooldown Mechanism: Preventing Multiple Unlocks**  
+To **prevent excessive requests**, a **cooldown period** is implemented.  
+This stops the system from **spamming the ESP32** with multiple unlock signals in a short time.  
+
+```python
+# Global variable to track cooldown status
+cooldown_active = False   
+cooldown_duration = 5  # Cooldown period in seconds
+
+def start_cooldown():
+    """
+    Start a cooldown timer to prevent repeated commands within a short time.
+    """
+    global cooldown_active
+    print("Starting cooldown...")
+    time.sleep(cooldown_duration)  # Wait for the cooldown duration
+    cooldown_active = False
+    print("Cooldown ended. Ready to detect again.")
+```
+### 📌 **Key Explanation:**  
+- The variable **`cooldown_active`** is used to **track if a cooldown is in progress**.  
+- Once a face is detected, the system **waits for `cooldown_duration` (5 seconds)** before allowing another unlock attempt.  
+- This **prevents unnecessary duplicate unlock signals** from being sent repeatedly.  
+
+---
+
+### 🟡 **Integrating Face Recognition with ESP32 Communication**  
+The **ESP32 unlock command** is only sent **if the cooldown is not active**:  
+```python
+if 20 <= conf <= 115:  # Confidence level check
+    print(f"ID: {ID}, Name: {labels[ID]}, Confidence: {conf}")
+
+    # Only send unlock command if cooldown is NOT active
+    if cooldown_active:
+        print("Cooldown active. Skipping detection...")
+    else:
+        print("Face recognized. Sending toggle command to ESP32.")
+        send_to_esp32(ESP32_URL_TOGGLE)
+
+        # Activate cooldown
+        cooldown_active = True
+        start_cooldown()
+```
+### 📌 **Key Explanation:**  
+- The system **checks if the detected face is within the confidence range** (`20 ≤ conf ≤ 115`).  
+- If a valid face is recognized and **cooldown is NOT active**, it **sends the unlock signal** to the ESP32.  
+- After sending the unlock command, the **cooldown is activated** to prevent immediate re-triggering.  
+
+---
+
+### 🎥 **Final Behavior**  
+- 🖥️ **Your camera activates** and detects your face.  
+- 🟡 **A yellow box tracks your face**, and **your name appears in the corner**.  
+- 🔓 When recognized, a **signal is sent to ESP32** to unlock the door.  
+- ⏳ **A cooldown prevents repeated unlocks** for **5 seconds**.  
+
+---
+# Step 7️⃣: ESP32 Integration with Face Recognition 🏠🔓  
+
+After integrating **Face Recognition** into the ESP32 smart lock system, we will look back to the C code. 
+several key **changes were made to the system behavior**, **web interface**, and **auto-lock timer**.  
+
+---
+
+### 🔍 **Key Changes Due to Face Recognition Integration**  
+
+### 1️⃣ **Face Recognition as a New Unlock Method**  
+- When **Face Recognition** is used to unlock the door, the **web interface logs the event as "by FACE ID"**.  
+- The ESP32 processes the request via the **`/face_toggle`** endpoint to toggle the door state.  
+
+#### 📜 **Code Extract (Handling Face Recognition Unlock Event)**
+```cpp
+server.on("/face_toggle", HTTP_POST, [](AsyncWebServerRequest *request) {
+    doorLocked = !doorLocked; 
+    controlDoor(doorLocked, "FACE ID");  // Log event as "by FACE ID"
+    String responseText = doorLocked ? "Face Lock Successful" : "Face Unlock Successful";
+    request->send(200, "text/plain", responseText);
+});
+```
+---
+### 🔹 **Explanation:**  
+- The **`/face_toggle`** endpoint toggles the door lock when triggered by **Face Recognition**.  
+- The **access log** in the web UI will display the unlock event as **"by FACE ID"**.  
+
+---
+
+### 2️⃣ **Auto-Lock Timer Extended (From 10s → 20s)**  
+- Since **Face Recognition takes longer to process**, the **auto-lock timer has been increased from 10s to 20s**.  
+- This ensures **users have enough time to close the door** before it auto-locks.  
+
+#### 📜 **Code Extract (Updating Auto-Lock Timer)**
+```cpp
+const unsigned long countdownDuration = 20000; // Auto-lock now set to 20s
+```
+### 🔹 **Explanation:**  
+- Previously, **`countdownDuration`** was **10000 (10s)**.  
+- It is now **increased to 20000 (20s)** to allow **more time for Face ID processing and door closure**.  
+
+---
+
+### 3️⃣ **Web Interface Timer Display Adjustments**  
+- The **web UI timer dynamically updates** to reflect the **new 20-second countdown** when Face Recognition is used.  
+- This provides a **visual confirmation** that users have **more time before auto-lock activates**.  
+
+#### 📜 **Code Extract (Timer Display in Web Interface)**
+```js
+function updateTimerDisplay() {
+    var timerElement = document.getElementById('timer');
+    if (doorLocked) {
+        timerElement.innerHTML = '00:20';  // Auto-lock timer updated
+    } else {
+        var seconds = Math.ceil(remainingTime / 1000);
+        var displaySeconds = seconds < 10 ? '0' + seconds : seconds;
+        timerElement.innerHTML = '00:' + displaySeconds;
+    }
+}
+```
+### 🔹 **Explanation:**  
+- When the **door locks**, the **timer resets to 20 seconds**.  
+- If the **door unlocks**, the **remaining time updates dynamically**.  
+- This ensures **users know exactly how long they have** before auto-lock activates.  
+
+---
+
+### 🎯 **Summary of Face Recognition Integration in ESP32 Code**  
+
+| Feature | Description |
+|---------|-------------|
+| **Face ID Unlock** | **`/face_toggle`** toggles door state and logs **"by FACE ID"** in the web UI. |
+| **Extended Auto-Lock Timer** | Increased from **10s → 20s** to allow enough time for door closure. |
+| **Web UI Timer Updates** | Timer dynamically adjusts to show a **20s countdown**. |
+
+---
+
+### 🔥 **Final Behavior After Face Recognition Unlock**  
+
+1️⃣ ✅ **Web UI logs the unlock event as "by FACE ID".**  
+2️⃣ 🚪 **Door unlocks, and the auto-lock timer starts at 20 seconds.**  
+3️⃣ ⏳ **User sees the timer counting down from 20s instead of 10s.**  
+4️⃣ 🔒 **After 20 seconds, the door locks automatically if no other action is taken.**  
