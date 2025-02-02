@@ -35,7 +35,7 @@ This system consists of two main sections:
 ### **📢 Output Components** (Responses)
 - 🔄 [Servo Motor Control](Servo%20Motor%20Control.md)  
   *(Controls locking and unlocking the door.)*  
-- 🖥️ [LCD Display](LCD%20Display.md) 
+- 🖥️ [LCD Display](LCD%20Display.md)  
   *(Shows status updates like "Door Unlocked" or "Wrong Access.")*
 - 🔊 [Buzzer Feedback](Buzzer%20Feedback.md)  
   *(Beeps once for success, twice for failure.)*
