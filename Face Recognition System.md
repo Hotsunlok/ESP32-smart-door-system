@@ -36,7 +36,7 @@ These three components work together to capture images, analyze faces, and send 
 💻 My device is using a **Logitech USB-connected camera** for face recognition.
 
 🖼️ **Camera Picture:**  
-![Logitech USB Camera](INSERT_CAMERA_IMAGE_LINK_HERE)
+![Logitech USB Camera](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8038f1cc167ce2bb21b5b2b31a5d0b44430b55e7/assets/IMG_0255.jpg)
 
 🛒 **Buy the Camera Here:**  
 [🔗 Click to Buy Logitech USB Camera](https://www.logitech.com/en-gb/shop/p/brio-100-webcam.960-001585)
