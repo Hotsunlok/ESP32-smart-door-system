@@ -20,7 +20,7 @@ These three components work together to capture images, analyze faces, and send 
 ## Python OpenCV Code
 
 💾 **The full Python OpenCV code can be found here:**  
-[📂 Click to Access the Code](INSERT_LINK_HERE)
+[📂 Click to Access the Code](Full_Python_Face_Recognition_Code.md)
 
 ## Important Setup Steps ⚠️
 
