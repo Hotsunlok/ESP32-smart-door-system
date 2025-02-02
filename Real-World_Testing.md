@@ -17,6 +17,8 @@ This ensures **smooth performance** and provides a **reliable** access control s
 📸 **Overall Sequence Testing - Smart Door System**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/46a39429787227c524423c66d8675fc626f4df13/assets/Overallsequencetesting.jpg)
 
+---
+
 ### 🔢 Step 1: Unlocking with Keypad
 
 Once the code is uploaded, the **Smart Door System** starts in a **locked state**.  
