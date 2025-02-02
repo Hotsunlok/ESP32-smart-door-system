@@ -201,11 +201,26 @@ cv2.destroyAllWindows()
    - 📄 `haarcascade_frontalface_default.xml`  
    - 📄 `AccessTo_webcam.py` (from Step 1)  
 
+### 📷 screenshot of the OPENCV_PROJECT
+![file Screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/75a0f978c9bce3cf58ff1426f887714b177eb579/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20125702.jpg)
+
 ---
 
 ### ▶️ **Running the Code**  
 Once everything is set up, follow these steps to run the face identification script:  
 1. **Open Visual Studio Code** and navigate to the `OpenCV_PROJECT` folder.  
 2. Run the python `Face_identification.py`:  
+
+---
+### 🎥 **What Happens Next?**  
+- 🖥️ **The camera will activate**, and a **real-time video feed** will appear.  
+- 😊 **You will see your face displayed on the monitor**.  
+- 🟡 **A yellow square box** will appear around your face.  
+- 🎯 **The box follows your face** as you move, tracking your position dynamically.  
+
+---
+### 📸 **Successful Face Detection Screenshot**  
+Once the system is working, you should see something like this:  
+![face detection screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/75a0f978c9bce3cf58ff1426f887714b177eb579/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20125702.jpg)
 
 
