@@ -63,7 +63,32 @@ After the door was **unlocked by keypad**, this time the user **uses the RFID ca
 - The **access log box updates** to: `3. The door is locked (by RFID).`
 
 
-
 📸 **Overall Physical System - Locking with RFID**  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/bd515f1ff14baee6ea413ee09ac0cbc05c2c0724/assets/step2.jpg)
+
+---
+### ✋ Step 3: Unlocking with Fingerprint Sensor
+
+After the door was **locked by RFID**, the user now **uses the fingerprint sensor** to **unlock the door**.
+
+This step follows the details in **[4.4.1 Fingerprint: Correct Password Access (Unlock Door)](Your-Link-Here)**.
+
+#### 📌 **User Action**
+- The user **places the correct fingerprint** (**right thumb**) on the **R307 Fingerprint Sensor**.
+
+#### 📟 **LCD Response**
+- The **LCD first updates** to `"Thinking..."`.  
+- Then, it **displays `"Unlocked"` at the end**.
+
+#### 🔊 **Other Component Responses**
+- **Buzzer beeps once** to confirm unlocking.  
+- **Servo motor rotates** to **50°**, pulling the **door lock for unlocking**.
+
+#### 🌐 **Web Interface Response**
+- The **toggle switch** button **automatically slides to green (right)**.  
+- The **access log box updates** to: `4. The door is unlocked (by fingerprint).`
+
+
+📸 **Overall Physical System - Unlocking with Fingerprint**  
 ![Upload Image Here](Your-Image-Link-Here)
 
