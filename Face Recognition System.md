@@ -221,6 +221,45 @@ Once everything is set up, follow these steps to run the face identification scr
 ---
 ### 📸 **Successful Face Detection Screenshot**  
 Once the system is working, you should see something like this:  
-![face detection screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/75a0f978c9bce3cf58ff1426f887714b177eb579/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20125702.jpg)
+![face detection screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/74ce4fddbb6f39f0465d4bfc10b80732c3b32ef6/assets/IMG_9750.jpg)
 
+---
+## Step 3️⃣: Data Collection 📸  
 
+To train the AI model for face recognition, you need to **capture multiple images** of yourself.  
+These images will be used later to **train the system** to recognize your face accurately.  
+
+---
+
+### 🎯 **How to Capture Images Properly**  
+1️⃣ **Use the same camera** you used in Step 1 & 2.  
+2️⃣ **Take at least 20+ pictures** of yourself.  
+3️⃣ **Keep the background consistent** and **ensure good lighting** (avoid shadows).  
+4️⃣ Capture **different angles and expressions**:  
+   - 🏞️ **Front face, left face, right face, up, and down**  
+   - 😀 **Smile, sad, angry expressions**  
+   - 👓 **With and without glasses**  
+
+💡 **For example, I took 60 images and named them from `000.jpg` to `060.jpg`**.
+
+---
+
+### 📂 **Organizing Your Data Folder**  
+1. Create a folder named **`image_data`** inside your `OpenCV_PROJECT` directory.  
+2. Inside `image_data`, create another folder **with your name** (e.g., `Jacky`).  
+3. Move all the **60 captured images** into this folder.  
+4. Ensure your images are named **sequentially** (`000.jpg`, `001.jpg`, ..., `060.jpg`).  
+
+---
+
+### 📷 **Example Screenshot of Image Collection**
+![Image Data Collection](INSERT_IMAGE_LINK_HERE)
+
+---
+
+### 🔍 **Check Your Library Manager**
+Once you have stored your images correctly, you should see the folder order in your **file explorer or library manager**.
+
+![Library Manager View](INSERT_IMAGE_LINK_HERE)
+
+---
