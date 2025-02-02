@@ -85,5 +85,28 @@ void controlDoor(bool lock, String method) {
     lcd.print(lock ? "Locked" : "Unlocked");
 }
  ```
+---
 # 📷 Two Pathways of LCD Display
 ![Two pathway of LCD display flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d557a7eb30742a3f3f11188b1977dfbb06495a51/assets/LCDFLOWCHART.jpg)  
+
+---
+## 🔄 LCD Display Behavior Across Unlocking Methods  
+
+Since we have already discussed how **Fingerprint, Keypad, RFID, and Face ID** trigger the LCD updates, you can read the detailed behavior in their respective sections:  
+
+- **🔢 Keypad** → [Read More](Keypad.md)  
+- **📡 RFID** → [Read More](RFID Card.md)  
+- **🛂 Fingerprint** → [Read More](Fingerprint.md)  
+- **📷 Face ID** → [Read More](FaceID.md)  
+
+---
+
+### 📌 **Keypad's Unique LCD Behavior**  
+
+Unlike **RFID, Fingerprint, and Face ID**, which **immediately** display `"Thinking..."` after detection:  
+✔ **Keypad first updates the LCD** to `"Enter Password"` before allowing users to type their **4-digit password**.  
+✔ Once the user enters all **4 digits**, the LCD **then updates** to `"Thinking..."`.  
+✔ After that, **all methods follow the same process**, leading to:  
+   - `"Unlocked"` if access is granted.  
+   - `"Locked"` if access is denied or auto-lock activates.  
+✔ The LCD **loops back to "Welcome Password"** in the end.  
