@@ -94,10 +94,11 @@ void controlDoor(bool lock, String method) {
 
 Since we have already discussed how **Fingerprint, Keypad, RFID, and Face ID** trigger the LCD updates, you can read the detailed behavior in their respective sections:  
 
-- **🔢 Keypad** → [Read More](Keypad.md)  
-- **📡 RFID** → [Read More](RFID Card.md)  
-- **🛂 Fingerprint** → [Read More](Fingerprint.md)  
-- **📷 Face ID** → [Read More](FaceID.md)  
+- 🔢 [Keypad](Keypad.md)  
+- 📡 [RFID Card System RC522](RFID%20Card.md)  
+- 🏷️ [Fingerprint Sensor R307](Fingerprint%20Sensor.md)  
+- 🎛️ [Web Server Toggle Button (Manual)](Web%20Server%20Toggle%20Button%20%28Manual%29.md)   
+- 🤖 [Face Recognition System](docs/Face_Recognition.md)  
 
 ---
 
