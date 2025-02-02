@@ -192,3 +192,18 @@ To send our PCB for production, we must generate these files:
 
 📷 **CPL File Screenshot (Component Placement List):**  
 ![CPL File](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/15f6470dfbba74b0726e36caea87c4dbf34a0048/assets/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-02-02%20173039.jpg)  
+
+# 📤 Upload Your PCB Files to JLCPCB
+
+Now that all necessary files are ready, it's time to **upload them to JLCPCB** for fabrication! 🎉  
+You will need to upload **three files**:  
+
+1️⃣ **Gerber ZIP File** (Contains all PCB manufacturing files)  
+2️⃣ **BOM (Bill of Materials) File** (Lists all components for assembly)  
+3️⃣ **CPL (Component Placement List) File** (Defines where each component is placed)  
+
+### 🛠️ **Recommended: PCBA Assembly**
+For beginners, **PCB assembly (PCBA)** is highly recommended ✅  
+**Why?** Because **soldering small components manually is difficult** and may lead to errors. Let JLCPCB do the soldering for you!  
+
+🔗 **Upload your files here:** [JLCPCB Official Website](https://jlcpcb.com/)  
