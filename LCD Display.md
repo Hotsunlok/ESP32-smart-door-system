@@ -86,4 +86,4 @@ void controlDoor(bool lock, String method) {
 }
  ```
 # 📷 Two Pathways of LCD Display
-![Two pathway of LCD display flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/3d22cdc96ebd30b8fb8d97d718856a8784a3d90a/assets/71xFXYb%2BR%2BL._AC_SY450_.jpg)  
+![Two pathway of LCD display flowchart](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d557a7eb30742a3f3f11188b1977dfbb06495a51/assets/LCDFLOWCHART.jpg)  
