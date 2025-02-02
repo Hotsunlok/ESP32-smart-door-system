@@ -205,4 +205,30 @@ lcd.print("Unlocked");
 ### 6️⃣ Final LCD Display: ` Unlocked ` 
 ---
 ## 📷 Code Flow: Toggle Switch → LCD Displays "Unlocked"
-![Toggle Switch → LCD Displays "Unlocked"](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a9b164685a0ed9fa315a1bdd8ccdd5d6543cbfe3/assets/LCDWRONGACCESSFLOW.jpg)
+![Toggle Switch → LCD Displays "Unlocked"](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/125f47a0a70d90f17ac7ea504e07ffb8ddfa81d8/assets/LCDtoggleswitchUnlock.jpg)
+
+---
+## ✅ **Case (2): User locks via Web Interface**  
+
+When the user **slides the toggle button to the left**, the following occurs:
+
+1. **Toggle button turns red** (locked state).  
+2. **Message `"lock"` is sent to ESP32**.  
+3. The ESP32 **calls the function**:
+   ```cpp
+   controlDoor(doorLocked, "website");
+   ```
+### 4️⃣ This function **updates** the `doorLocked` variable:
+
+- `doorLocked = false → true` (Unlocked → locked).  
+- `lock = true`, storing the updated status.  
+
+### 5️⃣ The LCD **reads** `lock = true` and displays:
+
+```cpp
+lcd.print("Locked");
+```
+### 6️⃣ Final LCD Display: ` Locked ` 
+---
+## 📷 Code Flow: Toggle Switch → LCD Displays "Locked"
+![Toggle Switch → LCD Displays "Locked"](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/125f47a0a70d90f17ac7ea504e07ffb8ddfa81d8/assets/LCDtoggleswitchUnlock.jpg)
