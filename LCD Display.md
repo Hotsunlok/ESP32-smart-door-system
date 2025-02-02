@@ -129,7 +129,49 @@ If the user **does not take any action** to enter a password and lock the door w
 ---
 
 ## 📷 LCD Feedback Flow - Auto-Lock Timer  
+  
+![LCD Auto-Lock Timer Display](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2b2ccc6899fa8e7f8ccdf2104e38277edc1bc6e5/assets/LCDAUTOLOCKFLOW.jpg)  
 
-📸 *Upload an image showing the LCD feedback flow for the auto-lock timer here:*  
-![LCD Auto-Lock Timer Display](UPLOAD_IMAGE_LINK_HERE)  
+---
 
+# ❌ LCD: Incorrect Access Feedback  
+
+When the user enters the **wrong password** using **any of the three methods** (**Keypad, RFID, or Fingerprint**), the system calls the `showError()` function.  
+This function **triggers the LCD to display** `"Wrong Access"`, alerting the user of failed authentication.
+
+---
+
+### 📌 **Method-Specific Incorrect Access Handling**  
+
+The table below shows how different methods call the `showError()` function:
+
+| **Method**      | **showError() Function Call**    |
+|---------------|--------------------------------|
+| **Keypad**     | `showError("keypad")`        |
+| **RFID**       | `showError("RFID")`          |
+| **Fingerprint**| `showError("fingerprint")`   |
+
+---
+
+## 🛑 **showError() Function - LCD Response**  
+
+When an incorrect password is detected, the `showError()` function:  
+✔ **Beeps the buzzer twice** (as an alert).  
+✔ **Clears the LCD screen**.  
+✔ **Displays** `"Wrong Access"`.  
+
+```cpp
+void showError(String method) {
+    // Beep twice
+    for (int i = 0; i < 2; i++) {
+        digitalWrite(BUZZER_PIN, HIGH);
+        delay(200);
+        digitalWrite(BUZZER_PIN, LOW);
+        delay(200);
+    }
+```
+## 📷 LCD Feedback Flow - Incorrect Access 
+  
+![LCD Auto-Lock Timer Display](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2b2ccc6899fa8e7f8ccdf2104e38277edc1bc6e5/assets/LCDAUTOLOCKFLOW.jpg)
+
+---
