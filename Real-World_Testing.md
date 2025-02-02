@@ -71,8 +71,6 @@ After the door was **unlocked by keypad**, this time the user **uses the RFID ca
 
 After the door was **locked by RFID**, the user now **uses the fingerprint sensor** to **unlock the door**.
 
-This step follows the details in **[4.4.1 Fingerprint: Correct Password Access (Unlock Door)](Your-Link-Here)**.
-
 #### 📌 **User Action**
 - The user **places the correct fingerprint** (**right thumb**) on the **R307 Fingerprint Sensor**.
 
@@ -90,5 +88,29 @@ This step follows the details in **[4.4.1 Fingerprint: Correct Password Access (
 
 
 📸 **Overall Physical System - Unlocking with Fingerprint**  
-![Upload Image Here](Your-Image-Link-Here)
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2bc421a2e6811581513af14ae4df6b6c201bb9d8/assets/step3.jpg)
 
+---
+### 🌐 Step 4: Locking with Web Interface Toggle Switch Button
+
+After the door was **unlocked by the fingerprint sensor**, the user now **uses the web interface toggle switch** to **lock the door**.
+
+This step follows the details in **[4.5.4 Web Interface: Manual Toggle Switch Control](Your-Link-Here)**.
+
+#### 📌 **User Action**
+- The user **manually slides** the **toggle switch button** from **green (right) to red (left)**.
+
+#### 📟 **LCD Response**
+- The **LCD updates** to `"Locked"` at the end.
+
+#### 🔊 **Other Component Responses**
+- **Buzzer beeps once** to confirm locking.  
+- **Servo motor rotates** to **110°**, **pushing the door lock into the locked position**.
+
+#### 🌐 **Web Interface Response**
+- The **toggle switch button remains in red (left)**, indicating **locked state**.
+- The **access log box updates** to: `5. The door is locked (by website).`
+
+
+📸 **Overall Physical System - Locking with Web Interface**  
+![Upload Image Here](Your-Image-Link-Here)
