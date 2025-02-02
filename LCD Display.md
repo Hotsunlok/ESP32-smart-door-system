@@ -111,3 +111,6 @@ Unlike **RFID, Fingerprint, and Face ID**, which **immediately** display `"Think
    - `"Unlocked"` if access is granted.  
    - `"Locked"` if access is denied or auto-lock activates.  
 ✔ The LCD **loops back to "Welcome Password"** in the end.  
+
+# 📷 whole map of LCD feedback flow for correct access
+![whole map of LCD feedback flow for correct access](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/d557a7eb30742a3f3f11188b1977dfbb06495a51/assets/LCDFLOWCHART.jpg)  
