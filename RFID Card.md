@@ -240,8 +240,9 @@ If the user **does not interact** within **10 seconds**:
 ---
 📸 **Overall Physical System - Auto-Lock Timer (Fingerprint)**
 ![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/8a6c59872ee20ce05f3779cacfe7a6b4d0f2d9f7/assets/RFIDautolocktflow.jpg)
+
 ---
-## ❌ RFID: Incorrect Card Access  
+# ❌ CASE 4:Incorrect Card Access - RFID Access 
 
 If the user **taps an unregistered RFID card**, the system **denies access** and the **door remains locked**.  
 
