@@ -13,7 +13,7 @@ It provides **visual feedback** after the user enters a password via any of the 
 ## 🖼️ LCD 1602 I2C Component Image  
 
 📸 *Upload an image of the LCD display component here:*  
-![LCD Display Component](UPLOAD_IMAGE_LINK_HERE)  
+![LCD Display Component]()  
 
 ---
 
