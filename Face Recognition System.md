@@ -31,6 +31,17 @@ These three components work together to capture images, analyze faces, and send 
 
 ⚡ **PLS BE CAUTION**: These steps **MUST** be done first to ensure everything works smoothly!
 
+🔍 **Please ensure that your computer camera is working fine, or you can connect a USB camera.**
+
+💻 My device is using a **Logitech USB-connected camera** for face recognition.
+
+🖼️ **Camera Picture:**  
+![Logitech USB Camera](INSERT_CAMERA_IMAGE_LINK_HERE)
+
+🛒 **Buy the Camera Here:**  
+[🔗 Click to Buy Logitech USB Camera](https://www.logitech.com/en-gb/shop/p/brio-100-webcam.960-001585)
+
+
 ---
 
 # Step-by-Step Guide 📖
@@ -85,7 +96,7 @@ After **installing OpenCV properly**, you can download and run the **AccessTo_we
 
 ### 📂 AccessTo_webcam.py Code  
 
-![AccessTo_webcam.py Screenshot](INSERT_IMAGE_LINK_HERE)
+![AccessTo_webcam.py Screenshot](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/48f02367200b846e597f075d694fca01663c57b2/assets/Accesstowebcam.jpg)
 
 If you **could not download the script**, don't worry!  
 The **Python code is shared below** so you can **copy and paste** it into your own script.  
