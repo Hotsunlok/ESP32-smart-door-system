@@ -172,6 +172,6 @@ void showError(String method) {
 ```
 ## 📷 LCD Feedback Flow - Incorrect Access 
   
-![LCD Auto-Lock Timer Display](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/2b2ccc6899fa8e7f8ccdf2104e38277edc1bc6e5/assets/LCDAUTOLOCKFLOW.jpg)
+![LCD Auto-Lock Timer Display](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/a9b164685a0ed9fa315a1bdd8ccdd5d6543cbfe3/assets/LCDWRONGACCESSFLOW.jpg)
 
 ---
