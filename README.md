@@ -39,19 +39,19 @@ This system consists of two main sections:
   *(Shows status updates like "Door Unlocked" or "Wrong Access.")*
 - 🔊 [Buzzer Feedback](Buzzer%20Feedback.md)  
   *(Beeps once for success, twice for failure.)*
-- 🌐 [Web Server Response & Real-Time Updates](docs/Web_Server_Response.md)  
-  *(Shows access logs, auto-lock countdown, and real-time state updates.)*  
+- 🛠️ [Real-World Testing](Real-World_Testing.md)  
+  *(Combining all access methods: Web Interface, Keypad, RFID, Fingerprint, and Auto-Lock for full system validation.)*
 
 
 ---
 
 ### 📌 Pin Connections & Hardware
-- 🛠️ [ESP32 Pin Mappings](ESP32_Pin_Mappings.md)  
+- 🗺️ [ESP32 Pin Mappings](ESP32_Pin_Mappings.md)  
   *(Includes all wiring tables for LCD, keypad, RFID, buzzer, servo, and fingerprint sensor.)*
 
 
 ### 🔌 PCB Design (KiCad)
-- 🛠️ [KiCad PCB Schematic & Layout](docs/PCB_Design.md)  
+- 💚 [KiCad PCB Schematic & Layout](docs/PCB_Design.md)  
   *(Final PCB circuit layout for ESP32-based smart door lock system.)*
 
 
