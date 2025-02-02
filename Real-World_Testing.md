@@ -40,4 +40,30 @@ Once the code is uploaded, the **Smart Door System** starts in a **locked state*
 
 
 📸 **Overall Physical System - Unlocking with Keypad**  
+![Upload Image Here](https://github.com/Hotsunlok/ESP32-smart-door-system/blob/61217594ae0c56df7eb9f97c5458340369792abb/assets/step1.jpg)
+
+---
+### 📡 Step 2: Locking with RFID
+
+After the door was **unlocked by keypad**, this time the user **uses the RFID card module** to **lock the door back**.
+
+#### 📌 **User Action**
+- The user **attaches the correct RFID card** to the **RC522 card module**.
+
+#### 📟 **LCD Response**
+- The **LCD first updates** to `"Thinking..."`.  
+- Then, it **displays `"Locked"` at the end**.
+
+#### 🔊 **Other Component Responses**
+- **Buzzer beeps once** to confirm locking.  
+- **Servo motor rotates** to **110°**, pushing the **door lock into the locked position**.  
+
+#### 🌐 **Web Interface Response**
+- The **toggle switch** button **automatically slides to red (left)**.  
+- The **access log box updates** to: `3. The door is locked (by RFID).`
+
+
+
+📸 **Overall Physical System - Locking with RFID**  
 ![Upload Image Here](Your-Image-Link-Here)
+
